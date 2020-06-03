@@ -9,7 +9,7 @@ _paginate: false
 
 ![bg](./assets/gradient.jpg)
 
-# <!--fit--> Marp CLI example
+# <!--fit--> Test
 
 Hosting Marp slide deck on the web
 
