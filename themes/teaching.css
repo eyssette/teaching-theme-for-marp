@@ -84,7 +84,7 @@ section.fmmmmmmmmmmmmmm {font-size:1.10rem!important;}
 
 /* Diapositives en pleine page */
 
-section.pleinepage, section.pp, section.citationL, section.citationM1, section.citationM2, section.citationC, section.cinema1 {
+section.pleinepage, section.pp, section.citationL, section.citationM1, section.citationM2, section.citationC, section.cinema {
     background:none;
     background-color: white;
 }
@@ -99,7 +99,7 @@ section::after {
     margin-bottom:-12px;
 }
     
-section.pleinepage::after, section.pp::after, section.citationL::after, section.citationM1::after, section.citationM2::after, section.citationC::after, section.cinema1::after {
+section.pleinepage::after, section.pp::after, section.citationL::after, section.citationM1::after, section.citationM2::after, section.citationC::after, section.cinema::after {
     color:black;
 }
 
@@ -128,7 +128,7 @@ ul li:before {
     width:1.5em;
     margin-left:-1.5em;
 }
-ul ul  {
+ul ul, ol ul  {
    list-style-type: none;
     list-style-type: circle;
     background: unset;
@@ -136,24 +136,30 @@ ul ul  {
     padding:0;
     padding-top:10px;
     padding-left:2em;
-    font-size:0.97em;
+    font-size:0.95em;
 }
-ul ul li {
+ul ul li, ol ul li {
     padding-left:0.2em;
 }
-ul ul li:before{
+ul ul li::before, ol ul li::before{
     content:"";
 }
-p ~ ol {margin-top:-0.25em;}
+p ~ ol, ol ~ ul {margin-top:-0.25em;}
 
+/* Centrer certains éléments */
 
-section.centrer h3, section.centrer h4 {
+section.centrertitre h3, section.centrertitre h4 {
 text-align:center;
 margin-bottom:1em;
 }
+section.centrerquestion ul {
+    text-align:center;
+}
+
+
 
 /* Dispositions en grille */
-section.titre, section.partie, section.citationL, section.citationM1, section.citationM2, section.cinema1, section.tableau {
+section.titre, section.partie, section.citationL, section.citationM1, section.citationM2, section.cinema, section.tableau {
     display:grid;
     grid-gap: 0px;
     align-items: center;
@@ -388,17 +394,14 @@ section.citationC blockquote {
 /* DIAPOSITIVE “EN-TÊTE” */
 
 section.entete h3 {
-    position:absolute;
-    top:20px;
-    left:0;
-    width:100%;
-    padding-top:25px;
-    padding-bottom:20px;
     text-align:center;
     font-size:120%;
     background-color:#00000009;
     font-weight:normal;
-    margin-left:0;
+    padding-top:30px;
+    padding-bottom:10px;
+    margin-bottom:10px;
+    width: 880px;
 }
 section.entete ul{
     padding-left:1em;
@@ -407,8 +410,26 @@ section.entete ul{
 section.entete ol {
     padding-left:2.5em;
     padding-right:1em;
-    margin-top:0;
 }
+section.entete p {
+}
+section.entete {
+    display:grid;
+    grid-template-rows: 130px ;
+    grid-template-areas:
+    "titre"
+    "."
+    "."
+    "."
+    ".";
+    align-items:center;
+    grid-gap:0px;
+}
+section.entete h3 {
+    grid-area:titre;
+}
+
+
 
 /* Diapositives “En-tête” : Lecture / Approfondissement */
 
@@ -440,7 +461,7 @@ section.entete.groupe h3:before {
 
 /* DIAPOSITIVES “CINEMA” : Affiche + résumé */
 
-section.cinema1 {
+section.cinema {
     grid-template-rows:20px 680px 20px ;
     grid-template-columns:1fr 25px 1fr 20px;
     grid-template-areas:
@@ -451,19 +472,19 @@ section.cinema1 {
     padding:0;
     font-size:1.4rem;
 }
-section.cinema1 p {
+section.cinema p {
     grid-area:image;
     margin:0;
     padding:0;
 }
-section.cinema1 p img {
+section.cinema p img {
     height:730px;
     width:100%;
     margin:0;
     padding:0;
     object-fit:cover;
 }
-section.cinema1 blockquote {
+section.cinema blockquote {
     grid-area:resume;
     margin:0;
 }
