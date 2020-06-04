@@ -603,7 +603,7 @@ L'École d'Athènes est une fresque du peintre italien Raphaël, qui présente l
 ---
 <!-- _class: etape -->
 ### 1) Deux images : alignement horizontal
-On utilise la classe ```i2t0``` ou ``ì2t1``` (titre en haut).
+On utilise la classe ```i2t0``` (aucun texte) ou ```i2t1``` (titre en haut).
 Par défaut l'alignement est horizontal.
 
 On ajoute ```pp```si on veut un
@@ -631,7 +631,7 @@ affichage en pleine page.
 ---
 <!-- _class: etape -->
 ### 1) Deux images : alignement vertical
-On utilise la même classe : ```i2t0```,
+On utilise la classe : ```i2t0```,
 et on ajoute ```vertical```si on veut un alignement vertical des deux images.
 
 On ajoute ```pp``` pour
