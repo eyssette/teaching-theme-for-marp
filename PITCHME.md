@@ -6,7 +6,7 @@ size: 4:3
 ---
 
 <!-- _class: titre -->
-# <!-- fit-->Utiliser Marp<br> pour créer des<br> slides
+# Utiliser Marp<br> pour créer des<br> slides <!-- fit-->
 Cédric Eyssette (2019-2020)
 http://eyssette.net
 
@@ -17,15 +17,13 @@ Cela permet de se concentrer sur le contenu, sans avoir à gérer le positionnem
 
 ---
 <!-- _class: partie -->
-# <!-- fit --> I – Faire des<br> parties, des<br> sous-parties
+# I – Faire des<br> parties, des<br> sous-parties <!-- fit -->
 Première partie
 
 ---
 <!-- _class: souspartie -->
-## <!-- fit-->A. Faire une sous&#8209;partie <br>(niveau 2)
+## A. Faire une sous&#8209;partie <br>(niveau 2) <!-- fit-->
 <!-- Code html trait d'union insécable :  &#8209; -->
-
-<!-- TODO : Trouver un style un peu plus flashy pour les sous-parties ?  -->
 
 ---
 <!-- _class: etape -->
@@ -43,7 +41,7 @@ De manière générale, l'hédonisme est la thèse selon laquelle le plaisir est
 
 ---
 <!-- _class: partie -->
-# <!-- fit --> II – Élements<br> de cours
+# II – Élements<br> de cours <!-- fit -->
 Deuxième partie
 
 ---
@@ -190,7 +188,7 @@ Voir la partie IV pour la mise en page
 
 ---
 <!-- _class: partie -->
-# <!-- fit-->III – Exercices
+# III – Exercices <!-- fit-->
 Troisième partie
 
 ---
@@ -359,7 +357,7 @@ En pleine page, ou non
 ---
 <!-- _class: etape fm -->
 
-### <!-- fit --> 2) Une image + un bloc de texte
+### 2) Une image + un bloc de texte <!-- fit -->
 
 Alignement vertical (texte en bas ou en haut), ou
 alignement horizontal (texte à gauche, ou à droite).
