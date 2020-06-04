@@ -96,7 +96,7 @@ Comme il y a beaucoup de contenu dans cette diapositive (c'est déconseillé �
 
 1) On peut faire apparaître progressivement du contenu dans des listes ordonnées en écrivant ```1)```, ```2)```, … plutôt que ```1.```, ```2.```, ….
 2) Cela ne marche bien sûr que pour l'export en HTML : le fichier PDF affichera la diapositive complète.
-3) On peut utiliser cette affichage progressif également pour les “puces” ordinaires (```* ``` plutôt que ```-```), qui sont utilisées, dans ce modèle, pour afficher des questions posées aux élèves
+3) On peut utiliser cet affichage progressif également pour les “puces” ordinaires, qui sont utilisées, dans ce modèle, pour afficher des questions posées aux élèves. On écrit alors ```* ``` plutôt que ```-```.
 
 * Est-ce suffisament clair ?
 
@@ -216,7 +216,7 @@ Pour l'image (affiche ou photogramme), on utilise la syntaxe Markdown ```![](URL
 On peut également faire en sorte que l'image soit cliquable pour renvoyer vers une vidéo en ligne : ```[![](URL-image)](URL-vidéo-en-ligne)```
 
 ---
-<!-- _class: cinema -->
+<!-- _class: cinema fmmmmmmmmmm-->
 
 [![](https://16bit.pl/download/games/screens/scarface-the-world-is-yours/cover.jpg)](https://safeYouTube.net/w/kg3J)
 
@@ -238,7 +238,7 @@ Voir la partie IV pour la mise en page
 <!-- _class: fpppppp-->
 On utilise la syntaxe Markdown pour les tableaux. Il faudra généralement diminuer la taille de la police.
 
-Si on veut faire apparaître progressivement le contenu du tableau (avec l'export HTML), on peut utiliser la syntaxe : ```<div data-marpit-fragment>Texte</div>```.
+Si on veut faire apparaître progressivement le contenu du tableau (avec l'export HTML), on peut utiliser la syntaxe : ```<div data-marpit-fragment>Texte</div>``` dans chaque cellule.
 
 
 ---
@@ -546,42 +546,33 @@ Platon et Aristote : détail de la fresque _L'école d'Athènes_
 - Manger du chocolat, est-ce le bonheur ?
 
 ---
-<!-- _class: i1t1 horizontal fm contain -->
-
-Par défaut, l'image est zoomée pour correspondre au cadre prédéfini.<br>
-Si on souhaite qu'elle soit contenu
-
-![](https://www.tate.org.uk/art/images/work/T/T07/T07573_9.jpg)
-
-
----
-<!-- _class: i1t1 horizontal pp  -->
-![](https://www.decorarconarte.com/WebRoot/StoreES2/Shops/61552482/4775/FD5E/B35F/5A2B/2D91/C0A8/28B9/489F/37229_Rafael_ml.jpg)
-
-Bloc de texte. Bloc de texte. Bloc de texte. Bloc de texte
-
----
 <!-- _class: i1t1 horizontal pp contain-->
 
-Bloc de texte. Bloc de texte. Bloc de texte. Bloc de texte
+Par défaut, l'image est zoomée pour correspondre au cadre prédéfini.<br>
+Si on souhaite que l'image soit redimensionnée automatiquement pour qu'on puisse la voir dans son intégralité, on ajoute la classe ```contain```
 
 ![](https://www.decorarconarte.com/WebRoot/StoreES2/Shops/61552482/4775/FD5E/B35F/5A2B/2D91/C0A8/28B9/489F/37229_Rafael_ml.jpg)
 
 
 
 ---
-<!-- _class: etape -->
+<!-- _class: etape fpp-->
 ### 3) Une image + deux <br>blocs de texte
 
-Un titre en haut
-Un texte à gauche ou à droite
-En pleine page, ou non
+On utilise la classe ```i1t2```, un titre de 
+niveau 3 (```### Titre```), et un bloc de texte,
+qui se positionne automatiquement à droite
+ou à gauche  selon l'ordre par rapport à
+l'image dans le fichier Markdown.
+
+On peut ajouter ```pp```pour un
+affichage en pleine page.
 
 ---
 <!-- _class: i1t2 -->
-### Test
+### Raphaël, _L'École d'Athènes_
 
-Bloc de texte. Bloc de texte. Bloc de texte. Bloc de texte
+L'École d'Athènes est une fresque du peintre italien Raphaël, qui présente les figures majeures de la pensée antique.
 
 ![](https://www.decorarconarte.com/WebRoot/StoreES2/Shops/61552482/4775/FD5E/B35F/5A2B/2D91/C0A8/28B9/489F/37229_Rafael_ml.jpg)
 
@@ -589,20 +580,20 @@ Bloc de texte. Bloc de texte. Bloc de texte. Bloc de texte
 
 ---
 <!-- _class: i1t2 fm-->
-### Dévoilement des femmes à Alger
+### Raphaël, _L'École d'Athènes_
 
-![](https://books.openedition.org/pur/docannexe/image/109053/img-1.jpg)
+![](https://www.decorarconarte.com/WebRoot/StoreES2/Shops/61552482/4775/FD5E/B35F/5A2B/2D91/C0A8/28B9/489F/37229_Rafael_ml.jpg)
 
-En mai 1958, à Alger, des femmes européennes dévoilent publiquement des algériennes musulmannes, recrutées, par la contrainte, pour participer à une manifestation de soutien à la France, et les forcent à retirer leur haïk. 
+L'École d'Athènes est une fresque du peintre italien Raphaël, qui présente les figures majeures de la pensée antique.
 
 ---
 <!-- _class: i1t2 pp -->
 
-### Dévoilement des femmes à Alger
+### Raphaël, _L'École d'Athènes_
 
-![](https://books.openedition.org/pur/docannexe/image/109053/img-1.jpg)
+L'École d'Athènes est une fresque du peintre italien Raphaël, qui présente les figures majeures de la pensée antique.
 
-En mai 1958, à Alger, des femmes européennes dévoilent publiquement des algériennes musulmannes, recrutées, par la contrainte, pour participer à une manifestation de soutien à la France, et les forcent à retirer leur haïk. 
+![](https://www.decorarconarte.com/WebRoot/StoreES2/Shops/61552482/4775/FD5E/B35F/5A2B/2D91/C0A8/28B9/489F/37229_Rafael_ml.jpg)
 
 
 ---
@@ -612,17 +603,19 @@ En mai 1958, à Alger, des femmes européennes dévoilent publiquement des algé
 ---
 <!-- _class: etape -->
 ### 1) Deux images : alignement horizontal
-Avec un texte au-dessus, ou non
-Plein écran ou non
+On utilise la classe ```i2t0```. Par défaut l'alignement est horizontal.
+
+On ajoute ```pp```si on veut un
+affichage en pleine page.
 
 ---
 <!-- _class: i2t0 -->
 
-### Test de titre
+### Platon et Aristote
 
-![](https://books.openedition.org/pur/docannexe/image/109053/img-1.jpg)
+![](https://upload.wikimedia.org/wikipedia/commons/1/1b/Raffael_067.jpg)
 
-![](https://books.openedition.org/pur/docannexe/image/109053/img-1.jpg)
+![](https://upload.wikimedia.org/wikipedia/commons/e/e3/Raffael_061.jpg)
 
 ---
 <!-- _class : i2t1 rapprocher contain fmmmmm-->
@@ -633,62 +626,50 @@ Plein écran ou non
 
 ![](https://images-na.ssl-images-amazon.com/images/I/51Anet6cFzL._SX328_BO1,204,203,200_.jpg)
 
----
-<!-- _class: i2t0 pp -->
-### Test de titre
-
-![](https://books.openedition.org/pur/docannexe/image/109053/img-1.jpg)
-
-![](https://books.openedition.org/pur/docannexe/image/109053/img-1.jpg)
 
 ---
 <!-- _class: etape -->
 ### 1) Deux images : alignement vertical
-Plein écran ou non
+On utilise la même classe : ```i2t0```,
+et on ajoute ```vertical```si on veut un alignement vertical des deux images.
+
+On ajoute ```pp``` pour
+l'affichage en pleine page.
 
 ---
-<!-- _class: i2t0 vertical -->
+<!-- _class: fppp -->
+On peut décaler la zone affichée de l'image en changeant le style de la diapositive.
 
-![](https://books.openedition.org/pur/docannexe/image/109053/img-1.jpg)
+<br>Par exemple :  
 
-![](https://pbs.twimg.com/media/ETu0VirWoAgwlqs.jpg)
-
+```<style scoped> p:nth-child(1) img {object-position:0px -40px} </style>```
 
 ---
 <!-- _class: i2t0 vertical pp -->
+<style scoped>
+    p:nth-child(1) img {object-position:0px -40px}
+</style>
 
-![](https://books.openedition.org/pur/docannexe/image/109053/img-1.jpg)
+![](https://static.usbeketrica.com/images/thumb_840xh/5b51b6806d0e2.jpg)
 
 ![](https://pbs.twimg.com/media/ETu0VirWoAgwlqs.jpg)
-
----
-<!-- _class: i2t0 vertical contain -->
-![](http://blogues.csaffluents.qc.ca/marcmichaud/files/2017/09/ethique_gyges.jpeg)
-
-![](https://i.imgur.com/AEiMmrN.jpg)
 
 ---
 <!-- _class: souspartie -->
 ## C. Avec trois images
-Alignement horizontal ou vertical
+
+---
+<!-- _class: fppp -->
+On utilise la classe ```i3t0``` et la syntaxe ```![bg contain](URL)``` pour les trois images.
+
+On ajoute la classe ```pp``` pour un affichage en pleine page.
+
+Pour un alignement vertical, on utilise la même syntaxe, sauf pour la première image, où l'on met : ```![bg contain vertical](URL)```.
+
+On peut supprimer le mot clé ```contain``` : l'image sera alors zoomée pour correspondre automatiquement au cadre prédéfini.
 
 ---
 <!-- _class: i3t0 -->
-
-
-![bg contain](https://fr.web.img5.acsta.net/medias/nmedia/18/83/23/81/19672460.jpg)
-![bg contain](https://cenicienta.fr/wp-content/uploads/2018/02/pocahontas.jpg)
-![bg contain](https://www.filmspourenfants.net/wp-content/uploads/2018/01/avatar-a-376x500.jpg)
-
----
-<!-- _class: i3t0 vertical -->
-
-![bg vertical](https://i.imgur.com/AEiMmrN.jpg)
-![bg contain](https://i.imgur.com/AEiMmrN.jpg)
-![bg fit](https://i.imgur.com/AEiMmrN.jpg)
-
----
-<!-- _class: i3t0 pp -->
 
 ![bg contain](https://fr.web.img5.acsta.net/medias/nmedia/18/83/23/81/19672460.jpg)
 ![bg contain](https://cenicienta.fr/wp-content/uploads/2018/02/pocahontas.jpg)
@@ -697,9 +678,9 @@ Alignement horizontal ou vertical
 ---
 <!-- _class: i3t0 vertical pp -->
 
-![bg vertical](https://i.imgur.com/AEiMmrN.jpg)
+![bg contain vertical](https://s.yimg.com/uu/api/res/1.2/PQRflV1fICGi5BDeo0gMGg--~B/aD0yNDA7dz00MjU7YXBwaWQ9eXRhY2h5b24-/https://www.blogcdn.com/massively.joystiq.com/media/2008/12/smeagol_1-sms-1208.jpg)
 ![bg contain](https://i.imgur.com/AEiMmrN.jpg)
-![bg fit](https://i.imgur.com/AEiMmrN.jpg)
+![bg](https://i.ytimg.com/vi/UYpRSs7pzJo/maxresdefault.jpg)
 
 
 ---
@@ -707,32 +688,36 @@ Alignement horizontal ou vertical
 ## D. Avec quatre images
 
 ---
-<!-- _class: i4t0 -->
+On utilise la classe ```i4t0```.
 
-![](https://i.imgur.com/AEiMmrN.jpg)
-
-![](https://cdn.pixabay.com/photo/2015/04/06/19/56/boy-709943_1280.jpg)
-
-![](https://pbs.twimg.com/media/ETu0VirWoAgwlqs.jpg)
-
-![](https://books.openedition.org/pur/docannexe/image/109053/img-1.jpg)
+On ajoute ```pp```pour un affichage en pleine page.
 
 ---
 <!-- _class: i4t0 pp -->
+<style scoped>
+    p:nth-child(2) img {object-position:0px -20px}
+</style>
 
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/StillLifeWithASkull.jpg/1564px-StillLifeWithASkull.jpg)
 
-![](https://i.imgur.com/AEiMmrN.jpg)
+![](https://upload.wikimedia.org/wikipedia/commons/d/d2/Georges_de_La_Tour_-_The_Penitent_Magdalen_-_WGA12339.jpg)
 
-![](https://cdn.pixabay.com/photo/2015/04/06/19/56/boy-709943_1280.jpg)
+![](https://upload.wikimedia.org/wikipedia/commons/3/35/Pieter_van_Steenwyck_001.jpg)
 
-![](https://pbs.twimg.com/media/ETu0VirWoAgwlqs.jpg)
-
-![](https://books.openedition.org/pur/docannexe/image/109053/img-1.jpg)
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Edwaert_Collier_-_Vanitas_-_Still_Life_with_Books_and_Manuscripts_and_a_Skull_-_Google_Art_Project.jpg/1474px-Edwaert_Collier_-_Vanitas_-_Still_Life_with_Books_and_Manuscripts_and_a_Skull_-_Google_Art_Project.jpg)
 
 
 ---
 <!-- _class: souspartie -->
 ## E. Mises en page complexes
+
+---
+
+Pour contrôler précisément la disposition de chaque élément sur une diapositive, on peut utiliser une grille.
+
+On utilise la classe ```grille```. On peut tout d'abord s'aider avec un quadrillage, que l'on fait apparaître, temporairement, avec la classe ```quadrillage```.
+
+On dispose alors les éléments avec la propriété CSS ```grid-area```.
 
 ---
 <!-- _class: grille quadrillage -->
@@ -750,7 +735,7 @@ section *:nth-child(5) {font-size:inherit;grid-area: 1 / 1 / -1 / -1 ;display:no
 <style scoped>
 section *:nth-child(1) {font-size:inherit;grid-area: 7 / 6 / 25 / -6 }
 section *:nth-child(2) {font-size:inherit;grid-area: 32 / 6 / -25 / -6; }
-section *:nth-child(3) {font-size:inherit;grid-area: 32 / 22 / -8 / -6  ; font-size:29px; }
+section *:nth-child(3) {font-size:29px;grid-area: 32 / 22 / -8 / -6  ;}
 section *:nth-child(4) {font-size:inherit;grid-area: 2 / 2 / -2 / -2 ;display:none!important;}
 section *:nth-child(5) {font-size:inherit;grid-area: 2 / 2 / -2 / -2 ;display:none!important;}
 </style>
@@ -763,3 +748,11 @@ Cette idée que l'harmonie se définit objectivement par des rapports numérique
 - Pourquoi Pythagore affirme-t-il que le principe de toutes choses est dans le nombre ?
 - Quelles ont été les applications de cette idée en architecture, en peinture et dans la sculpture ?
  
+
+---
+
+Ce thème pour le logiciel [Marp](https://marp.app/) s'intitule _teaching_. Vous pouvez l'utiliser pour vos diapositives, le modifier. Il est [publié sur Github](https://github.com/eyssette/teaching-theme-for-marp).
+
+Merci de me faire part de vos usages, de vos remarques et de vos suggestions d'amélioration !
+
+- Email : cedric.eyssette@gmail.com
