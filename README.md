@@ -8,9 +8,10 @@ Voici tout d'abord un [diaporama de présentation de ce thème](https://eyssette
 
 Ce diaporama a été créé à partir d'un simple fichier en markdown : [source du diaporama](https://github.com/eyssette/teaching-theme-for-marp/blob/master/PITCHME.md)
 
-Vous pouvez utiliser ce thème pour vos propres diapositives, le modifier : [Le thème en CSS](https://github.com/eyssette/teaching-theme-for-marp/blob/master/themes/teaching.css).
+Vous pouvez utiliser ce thème pour vos propres diapositives, le modifier : [le thème en CSS](https://github.com/eyssette/teaching-theme-for-marp/blob/master/themes/teaching.css).
 
 Merci de me faire part de vos usages, de vos remarques et de vos suggestions d'amélioration !
 
+Je ne suis pas développeur, mais professeur de philosophie… Le thème n'est probablement pas optimisé. N'hésitez pas à me communiquer vos critiques et propositions de modification !
 
 Email : cedric.eyssette@gmail.com
