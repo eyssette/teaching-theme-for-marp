@@ -6,19 +6,43 @@ size: 4:3
 ---
 
 <!-- _class: titre -->
-# Utiliser Marp<br> pour créer des<br> slides <!-- fit-->
+# Utiliser Marp<br> pour ses<br> diaporamas <!-- fit-->
 Cédric Eyssette (2019-2020)
-http://eyssette.net
+cedric.eyssette@gmail.com
 
 ---
-[Marp](https://marp.app/) est un outil qui permet de générer des slides à partir d'un fichier texte, écrit avec une syntaxe très simple.
+[Marp](https://marp.app/) est un outil qui permet de créer un diaporama à partir d'un fichier texte, écrit avec une syntaxe très simple.
 
-Cela permet de se concentrer sur le contenu, sans avoir à gérer le positionnement, le redimensionnement des éléments, des polices de caractère, grâce à des modèles de diapositives déjà définis.
+Cela permet de se concentrer sur le contenu, sans avoir à gérer le positionnement, le redimensionnement des éléments et des polices de caractère, grâce à des modèles de diapositives déjà définis.
+
+---
+<!-- _class: fppppppppp-->
+Pour écrire un diaporama avec Marp, il faut :
+1. Connaître la syntaxe [Markown](https://www.markdowntutorial.com/fr/) (c'est très simple),
+2. Savoir convertir son fichier en PDF ou en fichier html avec [Marp for VS Code](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode) ou [Marp CLI](https://github.com/marp-team/marp-cli)
+    - Une solution plus simple, mais pour le moment moins complète : [Marp web](https://web.marp.app/)
+
+---
+<style scoped>
+    ol {list-style-type:none;}
+</style>
+Ce diaporama a été créé avec ce système et sert à en illustrer les fonctionnalités :
+
+1. I – Organiser son diaporama
+2. II – Construire son cours
+3. III – Intégrer des exercices
+4. IV – Gérer la mise en page
 
 ---
 <!-- _class: partie -->
-# I – Faire des<br> parties, des<br> sous-parties <!-- fit -->
+# I – Organiser <br>son diaporama <!-- fit-->
 Première partie
+
+---
+Pour faire une partie, une sous-partie, ou une étape, il suffit d'utiliser les codes suivants : 
+1. ```<!-- _class: partie --> ```
+2. ```<!-- _class: souspartie -->```
+3. ```<!-- _class: etape -->```
 
 ---
 <!-- _class: souspartie -->
@@ -28,20 +52,21 @@ Première partie
 ---
 <!-- _class: etape -->
 ### 1/ Etape (niveau 3)
-(si on souhaite la faire
-apparaître en pleine page)
+si on souhaite la faire
+apparaître en pleine page
 
 ---
 ### 2/ Étape (niveau 3)
 
-Le personnage de Dorian Gray et le personnage de Peter Falk dans *Les ailes du désir* représentent deux  formes d'hédonisme.
+Le titre d'une étape de niveau 3 peut être intégré dans une diapositive avec du contenu, si on le souhaite.
 
-De manière générale, l'hédonisme est la thèse selon laquelle le plaisir est un bien qu'il faut rechercher.
+Dans ce cas, on n'utilise pas de code particulier, on définit simplement un titre de niveau 3 en markdown : ```### Titre```
+
 
 
 ---
 <!-- _class: partie -->
-# II – Élements<br> de cours <!-- fit -->
+# II – Construire <br>son cours <!-- fit -->
 Deuxième partie
 
 ---
@@ -49,24 +74,24 @@ Deuxième partie
 ## Explications et questions
 
 ---
-Paragraphe de texte pour expliquer un point de cours.
-Suite de ce paragraphe. 
+On écrit son texte normalement, sans code particulier, pour faire un paragraphe simple
 
-Deuxième paragraphe de texte. Deuxième paragraphe de texte.
+Pour intégrer une question que l'on veut poser aux élèves, on utilise une puce : ```- ``` qui s'affichera ainsi :
 
 - Question posée aux élèves : ………… ?
 
 ---
-<!-- _class: centrer fmmmmmmmmm-->
-### Attention !
+<!-- _class: fmmmmmmm centrerquestion -->
 
-Une technique se définit comme un savoir-faire qui permet de réaliser un objectif.
+Comme il y a beaucoup de contenu dans cette diapositive (c'est déconseillé 😄), on peut réduire la taille de la police de caractère avec la class `f`(pour “font”) et on ajoute une série de “m” pour avoir une police _moins_ grande, ou une série de “p” pour avoir une police _plus_ grande. Ici la classe utilisée est : ```fmmmmmmm```
 
 **Trois remarques** :
 
-1) On a souvent tendance à se focaliser sur les **objets techniques**, mais une technique se rapporte d'abord à une **activité** : un objet technique est le produit de certains savoir-faire, et il y a aussi un certain savoir-faire nécessaire pour son utilisation.
-2) Une technique n'implique **pas nécessairement l'usage d'un outil extérieur**, et l'anthropologue Marcel Mauss montre que c'est d'abord le corps lui-même qui fait l'objet de techniques : il y a en ce sens des **techniques du corps**, pour l'accouchement, pour s'endormir, pour courir, pour nager, pour s'accroupir (p.ex. : le [squat asiatique](http://www.viewpure.com/XCC75frWSfo?start=0&end=0)), pour les activités sexuelles …
-3) Une technique n'implique **pas nécessairement une activité physique, matérielle** : il y a aussi des techniques de l'esprit, des techniques cognitives pour accomplir certaines opérations mentales (p.ex. : des techniques de calcul mental).
+1) On peut faire apparaître progressivement du contenu dans des listes ordonnées en écrivant ```1)```, ```2)```, … plutôt que ```1.```, ```2.```, ….
+2) Cela ne marche bien sûr que pour l'export en HTML : le fichier PDF affichera la diapositive complète.
+3) On peut utiliser cette affichage progressif également pour les “puces” ordinaires (```* ``` plutôt que ```-```), qui sont utilisées, dans ce modèle, pour afficher des questions posées aux élèves
+
+* Est-ce suffisament clair ?
 
 ---
 <!-- _class: souspartie -->
@@ -75,33 +100,49 @@ Une technique se définit comme un savoir-faire qui permet de réaliser un objec
 ----
 <!-- _class: pointmethode -->
 ### Point méthode
-Ceci est un point méthode important à retenir
+Les points méthodes sont définis par la classe ```pointmethode```
 
 ---
 <!-- _class: souspartie -->
 ## Définition
 
 ----
-<!-- _class: definition fpp-->
+<!-- _class: definition fppppppp-->
 
 ### Définition
-- Au **sens faible** : l'ethnocentrisme désigne un _biais cognitif_ : nous avons tendance à percevoir autrui à travers le filtre de notre propre culture.
-- Au **sens fort** : l'ethnocentrisme se rapporte à une _hiérarchisation_ des cultures qui repose sur une _surestimation_ de sa culture (« nous, les civilisés ») et une _infériorisation_ des autres cultures (« eux, les barbares »).
+- Le but de cet encadré est de formuler explicitement la **définition** d'un terme, mais on pourrait bien sûr imaginer d'autres usages.
+- Pour créer une diapositive de ce type, on utilise la classe ```definition```
 
 ---
-<!-- _class: souspartie -->
-## Citation longue <br>en pleine page
+<!-- _class: souspartie-->
+## Citations
+
+---
+<!-- _class: etape fpp-->
+### Citation longue 
+Les citations longues s'affichent
+en pleine page, sans image
+
+On utilise le code ```citationL```, et la syntaxe
+Markdown pour les citations (```>```).
+
+La syntaxe pour le gras (```**Auteur**```) est
+utilisée ici pour les petites majuscules.
 
 ---
 <!-- _class: citationL -->
 >« Peu de créatures humaines accepteraient d'être changées en animaux inférieurs sur la promesse de la plus large ration de plaisirs de bêtes ; aucun être humain intelligent ne consentirait à être un imbécile, aucun homme instruit à être un ignorant, […] même s'ils avaient la conviction que l'imbécile, l'ignorant […] sont, avec leurs lots respectifs, plus complètement satisfaits qu'eux-mêmes avec le leur. [...] Un être pourvu de facultés supérieures demande plus pour être heureux, est probablement exposé à souffrir de façon plus aiguë, et offre certainement à la souffrance plus de points vulnérables qu'un être de type inférieur, mais en dépit de ces risques, il ne peut jamais souhaiter réellement tomber à un niveau d'existence qu'il sent inférieur. Nous pouvons donner de cette répugnance le nom qu'il nous plaira [...] mais si on veut l'appeler de son vrai nom, c'est un sens de la dignité que tous les êtres humains possèdent, sous une forme ou sous une autre, et qui correspond – de façon nullement rigoureuse d'ailleurs – au développement de leurs facultés supérieures. [...] Il vaut mieux être un homme insatisfait qu'un porc satisfait ; il vaut mieux être Socrate insatisfait qu'un imbécile satisfait. »
 >>John Stuart **Mill**, _L'Utilitarisme_
 
-
 ---
-<!-- _class: souspartie-->
-## Citation de taille moyenne
-Avec une image : auteur ou couverture
+<!-- _class: etape fppp-->
+### Citation de taille moyenne
+Les citations de taille moyenne intégrent
+une image (auteur ou couverture).
+
+On utilise le code ```citationM1``` ou ```citationM2```
+selon la taille du texte, et la syntaxe
+Markdown pour les images ```![](URL)```
 
 ---
 <!-- _class: citationM1 -->
@@ -116,9 +157,14 @@ Avec une image : auteur ou couverture
 >>**Rousseau**, _Discours sur l’origine et les fondements de l’inégalité parmi les hommes_, I
 
 ---
-<!-- _class: souspartie-->
-## Citation courte
-Avec une image : auteur ou couverture
+<!-- _class: etape fpppppp-->
+### Citation courte
+On utilise le code ```citationC```.
+
+Pour l'image, on utilise la syntaxe
+Mardown ```![bg left:40%](URL)```
+pour mettre l'image à gauche
+(on peut régler le pourcentage)
 
 ---
 <!-- _class: citationC -->
@@ -132,37 +178,42 @@ Avec une image : auteur ou couverture
 ## Lectures et approfondissement
 
 ---
-<!-- _class: entete lecture -->
+<!-- _class: entete lecture fppp-->
 ### Lectures
 
-Des lectures pour approfondir : 
-1. Rousseau : le _Discours sur l'économie politique_
-2. Machiavel : _Le Prince_
+On utilise le code ```entete``` pour faire apparaître le titre de niveau 3 en haut avec un fond grisé, et on ajoute ```lecture``` si on souhaite faire apparaître l'icône “livre”.
+Une liste ordonnée peut être utile ici pour indiquer les lectures à faire : 
+1. Première lecture possible
+2. Deuxième lecture possible
+3. ...
 
 
 ---
-<!-- _class: entete approfondissement -->
+<!-- _class: entete approfondissement fppppppp-->
 ### Pour aller plus loin
 
-1. Travailler sur la notion de “paternalisme d'entreprise”
-2. Faire des recherches sur la psychologie positive : y a-t-il une science du bonheur ?
+On utilise à nouveau le code ```entete```.
+
+On ajoute ```approfondissement``` si on souhaite faire apparaître l'icône “escalade”.
 
 ---
 <!-- _class: souspartie -->
 ## Usage du cinéma : affiche + résumé
 
 ---
-<!-- _class: cinema1 -->
+<!-- _class: fpppppppp -->
+On utilise le code ```cinema```.
 
-[![](https://16bit.pl/download/games/screens/scarface-the-world-is-yours/cover.jpg)](http://eyssette.net)
+Pour l'image (affiche ou photogramme), on utilise la syntaxe Markdown ```![](URL)```, pour le résumé la syntaxe pour les citations ```>```.
 
-> « Antonio “Tony” Montana (Al Pacino) […] est un petit malfrat cubain qui migre vers Miami dans l'espoir de faire fortune. Il trouve au départ un petit boulot dans une baraque à frites de Miami. Mais travailler pour quelques dollars ne correspond pas à l'idée qu'il se fait du « rêve américain ». Il se fait alors embaucher par un malfrat local puis par Frank Lopez, son patron]. […] Tony apprend vite le métier de mafioso de la drogue : il monte en grade […] Il a les dents beaucoup plus longues que ses collègues, il est mégalomane, ambitieux et d'une intelligence plus perverse. Il prend pour adage : _The World is Yours_ (Le monde est à toi) [...] Mais il commence à faire des erreurs dans ce monde qui ne pardonne pas, où l'on est vite remplacé. Il prend conscience que d'être arrivé au sommet de la mafia ne le rend pas aussi heureux qu'il l'avait espéré, qu'il n'est pas capable de rendre heureuses les personnes qu'il aime&nbsp;» (source : [wikipedia](https://fr.wikipedia.org/wiki/American_History_X))
+On peut également faire en sorte que l'image soit cliquable pour renvoyer vers une vidéo en ligne : ```[![](URL-image)](URL-vidéo-en-ligne)```
 
 ---
-<!-- _class: cinema1 fmmmmm-->
-![](https://fr.web.img3.acsta.net/medias/nmedia/18/81/98/98/19841064.jpg)
+<!-- _class: cinema -->
 
->« Michael Fassbender se mue ici en cadre supérieur new yorkais à la vie très cloisonnée, incapable de vivre sa sexualité autrement que par le recours à la pornographie, à la prostitution, aux rencontres sans lendemain. [...] Steve McQueen dessine le portrait d’un homme perdu, esclave de ses démons. Captant un monde quadrillé à l’extrême (rues, façades de verre, bureaux, écrans…), jouant sur le paradoxe d’une infranchissable transparence, le réalisateur explore les méandres d’une solitude très contemporaine. » ([source](http://www.la-croix.com/Culture-Loisirs/Culture/Cinema/Shame-l-infranchissable-mur-de-la-vraie-rencontre-_EG_-2011-12-06-744235))
+[![](https://16bit.pl/download/games/screens/scarface-the-world-is-yours/cover.jpg)](https://safeYouTube.net/w/kg3J)
+
+> « Antonio “Tony” Montana (Al Pacino) […] est un petit malfrat cubain qui migre vers Miami dans l'espoir de faire fortune. Il trouve au départ un petit boulot dans une baraque à frites de Miami. Mais travailler pour quelques dollars ne correspond pas à l'idée qu'il se fait du « rêve américain ». Il se fait alors embaucher par un malfrat local puis par Frank Lopez, son patron]. […] Tony apprend vite le métier de mafioso de la drogue : il monte en grade […] Il a les dents beaucoup plus longues que ses collègues, il est mégalomane, ambitieux et d'une intelligence plus perverse. Il prend pour adage : _The World is Yours_ (Le monde est à toi) [...] Mais il commence à faire des erreurs dans ce monde qui ne pardonne pas, où l'on est vite remplacé. Il prend conscience que d'être arrivé au sommet de la mafia ne le rend pas aussi heureux qu'il l'avait espéré, qu'il n'est pas capable de rendre heureuses les personnes qu'il aime&nbsp;» (source : [wikipedia](https://fr.wikipedia.org/wiki/American_History_X))
 
 
 ---
@@ -177,18 +228,24 @@ Voir la partie IV pour la mise en page
 ## Tableaux récapitulatifs
 
 ---
+<!-- _class: fpppppp-->
+On utilise la syntaxe Markdown pour les tableaux. Il faudra généralement diminuer la taille de la police.
+
+Si on veut faire apparaître progressivement le contenu du tableau (avec l'export HTML), on peut utiliser la syntaxe : ```<div data-marpit-fragment>Texte</div>```.
+
+
+---
 <!-- _class: fmmmmmm -->
-<!-- TODO : faire plusieurs modèles ? Tableau1, tableau2 … -->
 || Pertinence |Limites|
 |:-|:-:|:--:|
-|**Relativisme culturel** | <div data-marpit-fragment>Paragraphe explicatif. Paragraphe explicatif. Paragraphe explicatif. </div>|<div data-marpit-fragment>Paragraphe explicatif. Paragraphe explicatif. Paragraphe explicatif.</div>|
-| **Morale de la<br>sensibilité** | <div data-marpit-fragment>Paragraphe explicatif. Paragraphe explicatif. Paragraphe explicatif. </div>|<div data-marpit-fragment>Paragraphe explicatif. Paragraphe explicatif. Paragraphe explicatif. </div>|
-| **Morale des<br> conséquences** | <div data-marpit-fragment>Paragraphe explicatif. Paragraphe explicatif. Paragraphe explicatif. </div>|<div data-marpit-fragment>Paragraphe explicatif. Paragraphe explicatif. Paragraphe explicatif. </div>|
-|**Morale des<br> principes** | <div data-marpit-fragment>Paragraphe explicatif. Paragraphe explicatif. Paragraphe explicatif. </div>|<div data-marpit-fragment>Paragraphe explicatif. Paragraphe explicatif. Paragraphe explicatif. </div>|
+|**Relativisme culturel** | Paragraphe explicatif. Paragraphe explicatif. Paragraphe explicatif.|Paragraphe explicatif. Paragraphe explicatif. Paragraphe explicatif.|
+| **Morale de la<br>sensibilité** | Paragraphe explicatif. Paragraphe explicatif. Paragraphe explicatif. |Paragraphe explicatif. Paragraphe explicatif. Paragraphe explicatif. |
+| **Morale des<br> conséquences** | Paragraphe explicatif. Paragraphe explicatif. Paragraphe explicatif. |Paragraphe explicatif. Paragraphe explicatif. Paragraphe explicatif. |
+|**Morale des<br> principes** | Paragraphe explicatif. Paragraphe explicatif. Paragraphe explicatif. |Paragraphe explicatif. Paragraphe explicatif. Paragraphe explicatif.|
 
 ---
 <!-- _class: partie -->
-# III – Exercices <!-- fit-->
+# III – Intégrer <br>des exercices <!-- fit-->
 Troisième partie
 
 ---
