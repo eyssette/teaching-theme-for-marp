@@ -45,6 +45,12 @@ Pour faire une partie, une sous-partie, ou une étape, il suffit d'utiliser les 
 3. ```<!-- _class: etape -->```
 
 ---
+<!-- _class: fppppppp -->
+Pour les parties, on utilise un titre de niveau 1 (```#```), pour les sous-parties, un titre de niveau 2 (```##```), et pour les étapes, un titre de niveau 3 (```###```).
+
+Si on veut que le titre occupe le maximum de place sur la diapositive, on ajoute, après le titre : ```<!-- fit -->```. On peut utiliser ```<br>```pour forcer le passage à la ligne.
+
+---
 <!-- _class: souspartie -->
 ## A. Faire une sous&#8209;partie <br>(niveau 2) <!-- fit-->
 <!-- Code html trait d'union insécable :  &#8209; -->
@@ -52,6 +58,7 @@ Pour faire une partie, une sous-partie, ou une étape, il suffit d'utiliser les 
 ---
 <!-- _class: etape -->
 ### 1/ Etape (niveau 3)
+On utilise la classe ```etape```
 si on souhaite la faire
 apparaître en pleine page
 
@@ -123,7 +130,7 @@ Les points méthodes sont définis par la classe ```pointmethode```
 Les citations longues s'affichent
 en pleine page, sans image
 
-On utilise le code ```citationL```, et la syntaxe
+On utilise la classe ```citationL```, et la syntaxe
 Markdown pour les citations (```>```).
 
 La syntaxe pour le gras (```**Auteur**```) est
@@ -137,10 +144,10 @@ utilisée ici pour les petites majuscules.
 ---
 <!-- _class: etape fppp-->
 ### Citation de taille moyenne
-Les citations de taille moyenne intégrent
-une image (auteur ou couverture).
+Les citations de taille moyenne intègrent
+une image (auteur ou couverture du livre).
 
-On utilise le code ```citationM1``` ou ```citationM2```
+On utilise la classe ```citationM1``` ou ```citationM2```
 selon la taille du texte, et la syntaxe
 Markdown pour les images ```![](URL)```
 
@@ -159,7 +166,7 @@ Markdown pour les images ```![](URL)```
 ---
 <!-- _class: etape fpppppp-->
 ### Citation courte
-On utilise le code ```citationC```.
+On utilise la classe ```citationC```.
 
 Pour l'image, on utilise la syntaxe
 Mardown ```![bg left:40%](URL)```
@@ -181,7 +188,7 @@ pour mettre l'image à gauche
 <!-- _class: entete lecture fppp-->
 ### Lectures
 
-On utilise le code ```entete``` pour faire apparaître le titre de niveau 3 en haut avec un fond grisé, et on ajoute ```lecture``` si on souhaite faire apparaître l'icône “livre”.
+On utilise la classe ```entete``` pour faire apparaître le titre de niveau 3 en haut avec un fond grisé, et on ajoute ```lecture``` si on souhaite faire apparaître l'icône “livre”.
 Une liste ordonnée peut être utile ici pour indiquer les lectures à faire : 
 1. Première lecture possible
 2. Deuxième lecture possible
@@ -192,7 +199,7 @@ Une liste ordonnée peut être utile ici pour indiquer les lectures à faire :
 <!-- _class: entete approfondissement fppppppp-->
 ### Pour aller plus loin
 
-On utilise à nouveau le code ```entete```.
+On utilise à nouveau la classe ```entete```.
 
 On ajoute ```approfondissement``` si on souhaite faire apparaître l'icône “escalade”.
 
@@ -201,10 +208,10 @@ On ajoute ```approfondissement``` si on souhaite faire apparaître l'icône “e
 ## Usage du cinéma : affiche + résumé
 
 ---
-<!-- _class: fpppppppp -->
-On utilise le code ```cinema```.
+<!-- _class: fppppppp -->
+On utilise la classe ```cinema```.
 
-Pour l'image (affiche ou photogramme), on utilise la syntaxe Markdown ```![](URL)```, pour le résumé la syntaxe pour les citations ```>```.
+Pour l'image (affiche ou photogramme), on utilise la syntaxe Markdown ```![](URL)```. Pour le résumé, on utilise la syntaxe pour les citations ```>```.
 
 On peut également faire en sorte que l'image soit cliquable pour renvoyer vers une vidéo en ligne : ```[![](URL-image)](URL-vidéo-en-ligne)```
 
@@ -253,6 +260,14 @@ Troisième partie
 ## Exercice type :<br> QCM
 
 ---
+<!-- _class: fpppppppp -->
+On utilise la classe ```qcm```. L'icône “question” est automatiquement intégrée.
+
+Pour poser la question, on utilise une puce ```-```, et une liste ordonnée ```1.```, ```2.```… pour les propositions.
+
+Pour la correction, on copie-colle la diapositive, et on indique la réponse en utilisant la syntaxe pour le gras : ```**réponse**```.
+
+---
 <!-- _class: qcm --> 
 - Comment peut-on distinguer le bonheur du plaisir ?
 
@@ -275,11 +290,19 @@ Troisième partie
 ## Exercice type : tableau de distinctions
 
 ---
+<!-- _class: fppp -->
+On utilise la classe ```exercice tableau```, la syntaxe Markdown pour le tableau, et une liste ordonnée ```1.```, ```2.```, … pour les propositions de réponses.
+
+Pour la correction, on crée une autre diapositive, on copie-colle le tableau, et on inscrit les propositions au bon endroit. On utilise la classe ```exercice tableau-r``` pour cette diapositive.
+
+On peut décider de garder les numéros des propositions : il faut alors utiliser la syntaxe pour l'italique (```_1_```ou ```*1*```), afin de les faire apparaître en grisé.
+
+---
 <!-- _class: etape -->
 ### 1) Tableau simple 
 
 ---
-<!-- _class: exercice tableau -->  <!-- TODO : Utiliser du bleu (pour la couleur de la conceptualisation) -->
+<!-- _class: exercice tableau -->
 | Le bonheur est un état de satisfaction … |Le plaisir est un état de satisfaction …|
 |:--:|:--:|
 |?|?|
@@ -303,8 +326,10 @@ Troisième partie
 |*1* qui provient d’un <br>jugement général<br> sur la vie|*6* qui provient d’un<br> fait particulier|
 
 ---
-<!-- _class: etape -->
+<!-- _class: etape fpppp -->
 ### 2) Tableau avec propositions de réponse en deux colonnes
+
+Si le tableau est complexe, on peut disposer les propositions de réponse en colonnes : on ajoute simplement la classe ```colonnes```
 
 ---
 <!-- _class: exercice tableau colonnes -->
@@ -326,7 +351,13 @@ Troisième partie
 ## Exercice type : argumentation
 
 ---
-<!-- _class: exercice argumentation -->
+<!-- _class:  fppppppppp-->
+Le but de ce type d'exercice est soit de trouver la prémisse intermédiaire qui permet de parvenir à une conclusion, soit la conclusion que l'on peut déduire de deux prémisses.
+
+Pour cette diapositive, on utilise la classe ```exercice argumentation```, et une liste ordonnée pour les deux prémisses et la conclusion.
+
+---
+<!-- _class: exercice argumentation fppppppp -->
 1. Le désir est un état de manque
 2. ………………………………
 3. Désirer, c'est souffrir
@@ -340,7 +371,14 @@ Troisième partie
 
 ---
 <!-- _class: souspartie -->
-## Exercice type : mobilisation des connaissances
+## Exercice type : Application des connaissances
+
+---
+<!-- _class: fppppp -->
+Les exercices d'application sont des exercices de rédaction (un paragraphe).
+
+Pour cette diapositive, on utilise la classe ```exercice application```, un titre de niveau 3 (```###```), une puce pour la question (```-```), et une liste ordonnée pour les propositions de sujet (```1.```, ```2.```, …).
+
 
 ---
 <!-- _class: exercice application -->  
@@ -356,16 +394,16 @@ Troisième partie
 
 ---
 <!-- _class: souspartie -->
+
 ## Exercice type : discussion
+
 
 ---
 <!-- _class: entete discussion -->
 
 ### Discussion
-1. Un embryon est-il une personne ?
-2. Un animal est-il une personne ?
-3. Un robot est-il une personne ?
-4. Vous à 1 an et vous à 70 ans, est-ce la même personne ?
+
+<br>On utilise la classe ```entete``` et on ajoute ```discussion``` si on souhaite faire apparaître l'icône associée à ce type d'exercice. 
 
 ---
 <!-- _class: souspartie -->
@@ -374,7 +412,8 @@ Troisième partie
 ---
 <!-- _class: entete groupe -->
 ### Travail en groupe
-Consigne pour le travail en groupe
+
+<br>On utilise la classe ```entete``` et on ajoute ```groupe``` si on souhaite faire apparaître l'icône associée à ce type d'exercice. 
 
 ---
 <!-- _class: partie -->
@@ -386,13 +425,18 @@ Quatrième partie
 ## A. Avec une image
 
 ---
-<!-- _class: etape -->
+<!-- _class: etape fppppppp -->
 ### 1) Une image, sans texte
-En pleine page, ou non
+On utilise la classe ```i1t0```
+(image : 1 / texte : 0)
+
+On ajoute ```pp```si on veut utiliser
+le mode pleine page
+
+L'image se redimensionne automatiquement pour occuper le maximum de place sur la diapositive
 
 ---
 <!-- _class: i1t0 pp -->
-<!--![](images/plan.png)-->
 ![](https://i.ibb.co/DbydYNJ/plan.png)
 <!-- https://www.pastery.net/buhwpe/  -->
 
