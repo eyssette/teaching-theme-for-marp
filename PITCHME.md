@@ -456,20 +456,23 @@ L'image se redimensionne automatiquement pour occuper le maximum de place sur la
 <!-- https://www.pastery.net/buhwpe/  -->
 
 ---
-<!-- _class: etape fm -->
+<!-- _class: etape fmmmmm -->
 
 ### 2) Une image + un bloc de texte <!-- fit -->
 
-Alignement vertical (texte en bas ou en haut), ou
-alignement horizontal (texte à gauche, ou à droite).
+On utilise la classe ```i1t1 vertical```  pour un alignement vertical, ou la classe ```i1t1 horizontal``` pour un alignement horizontal.
 
-En pleine page, ou non
+La disposition (en haut ou en bas, à gauche ou à droite)
+dépend de l'ordre dans lequel vous avez placé l'image
+et le texte dans votre fichier en Markdown.
+
+On peut ajouter ```pp``` pour avoir un affichage en pleine page.
 
 ---
 <!-- _class: i1t1 vertical -->
 ![](https://pbs.twimg.com/media/ETu0VirWoAgwlqs.jpg)
 
-Un extrait de Minority Report[<sup>+</sup>](https://drive.google.com/file/d/10Rz6T-5OkkDlnwSzHse2SnyMd7ZiT-HF/view?usp=sharing). 
+Un extrait de Minority Report <sup>[+](https://drive.google.com/file/d/10Rz6T-5OkkDlnwSzHse2SnyMd7ZiT-HF/view?usp=sharing)</sup>
 
 
 ---
@@ -504,6 +507,22 @@ Plan du cours
 ![](https://i.ibb.co/DbydYNJ/plan.png)
 
 ---
+
+<!-- _class: i1t1 vertical pp -->
+
+![](https://www.decorarconarte.com/WebRoot/StoreES2/Shops/61552482/4775/FD5E/B35F/5A2B/2D91/C0A8/28B9/489F/37229_Rafael_ml.jpg)
+
+Platon et Aristote
+
+---
+
+En cas d'alignement vertical, le bloc de texte est conçu pour ne pas être très grand (une ou deux lignes).
+
+Si on souhaite avoir une image plus petite, on peut le faire en transformant le style de mise en page seulement pour cette diapositive :
+
+``` <style scoped> section img {height:510px;} </style>```
+
+---
 <!-- _class: i1t1 vertical pp fmmmm-->
 <style scoped>
     section img {height:510px;}
@@ -513,14 +532,6 @@ Plan du cours
 
 - Pourquoi cet objet ne semble-t-il pas, à première vue, être une œuvre d’art ? Qu’attendons-nous d’une œuvre d’art ?
 - Quel est, à votre avis, le sens du geste de Duchamp ? Que cherche-t-il à faire ?
-
----
-
-<!-- _class: i1t1 vertical pp -->
-
-![](https://www.decorarconarte.com/WebRoot/StoreES2/Shops/61552482/4775/FD5E/B35F/5A2B/2D91/C0A8/28B9/489F/37229_Rafael_ml.jpg)
-
-Platon et Aristote
 
 ---
 <!-- _class: i1t1 horizontal -->
@@ -535,11 +546,12 @@ Platon et Aristote : détail de la fresque _L'école d'Athènes_
 - Manger du chocolat, est-ce le bonheur ?
 
 ---
-<!-- _class: i1t1 horizontal  -->
+<!-- _class: i1t1 horizontal fm contain -->
 
-Bloc de texte. Bloc de texte. Bloc de texte. Bloc de texte.
+Par défaut, l'image est zoomée pour correspondre au cadre prédéfini.<br>
+Si on souhaite qu'elle soit contenu
 
-![](https://cdn.pixabay.com/photo/2015/04/06/19/56/boy-709943_1280.jpg)
+![](https://www.tate.org.uk/art/images/work/T/T07/T07573_9.jpg)
 
 
 ---
