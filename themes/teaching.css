@@ -701,6 +701,7 @@ section.i1t1.horizontal {
 section.i1t1.horizontal *:nth-child(1){
 grid-area:zone1;
 margin:2px;
+text-align:justify;
 }
 section.i1t1.horizontal * ~ * {
 grid-area:zone2;
