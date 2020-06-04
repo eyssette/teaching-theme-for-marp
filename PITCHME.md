@@ -472,7 +472,7 @@ On peut ajouter ```pp``` pour avoir un affichage en pleine page.
 <!-- _class: i1t1 vertical -->
 ![](https://pbs.twimg.com/media/ETu0VirWoAgwlqs.jpg)
 
-Un extrait de Minority Report <sup>[+](https://drive.google.com/file/d/10Rz6T-5OkkDlnwSzHse2SnyMd7ZiT-HF/view?usp=sharing)</sup>
+Un extrait de Minority Report [+](https://drive.google.com/file/d/10Rz6T-5OkkDlnwSzHse2SnyMd7ZiT-HF/view?usp=sharing)
 
 
 ---
@@ -603,7 +603,8 @@ L'École d'Athènes est une fresque du peintre italien Raphaël, qui présente l
 ---
 <!-- _class: etape -->
 ### 1) Deux images : alignement horizontal
-On utilise la classe ```i2t0```. Par défaut l'alignement est horizontal.
+On utilise la classe ```i2t0``` ou ``ì2t1``` (titre en haut).
+Par défaut l'alignement est horizontal.
 
 On ajoute ```pp```si on veut un
 affichage en pleine page.
