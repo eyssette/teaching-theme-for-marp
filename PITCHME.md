@@ -552,7 +552,7 @@ Plein écran ou non
 
 ---
 <!-- _class: i2t0 vertical contain -->
-![](images/gyges.png)
+![](http://blogues.csaffluents.qc.ca/marcmichaud/files/2017/09/ethique_gyges.jpeg)
 
 ![](https://i.imgur.com/AEiMmrN.jpg)
 
@@ -646,7 +646,7 @@ section *:nth-child(5) {font-size:inherit;grid-area: 2 / 2 / -2 / -2 ;display:no
 
 Cette idée que l'harmonie se définit objectivement par des rapports numériques, par des proportions définies, correspond à la **conception pythagoricienne du Beau**.
 
-![](images/pythagore.jpg)
+![](https://upload.wikimedia.org/wikipedia/commons/1/1a/Kapitolinischer_Pythagoras_adjusted.jpg)
 
 - Lire le texte de la diapositive suivante (Carole Talon-Hugon, _L’antiquité grecque_ (2014), chapitre II : « Qu’est-ce que le beau ? »), et répondre aux questions suivantes :
 - Pourquoi Pythagore affirme-t-il que le principe de toutes choses est dans le nombre ?
