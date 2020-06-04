@@ -14,10 +14,3 @@ Merci de me faire part de vos usages, de vos remarques et de vos suggestions d'a
 
 
 Email : cedric.eyssette@gmail.com
-
-
-```
-
-## LICENSE
-
-[WTFPL](/LICENSE)
