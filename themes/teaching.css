@@ -21,14 +21,14 @@ section h1, section h2, section.titre p, section.partie p, section.souspartie p 
     margin:0;
     padding:0;
 }
-section h3, section p, section ol {
+section h3, section h4, section p, section ol {
     text-align:left;
     margin-left:38px;
     margin-right:36px;
     padding-left:30px;
     padding-right:30px;
 }
-section h3 {
+section h3, section h4 {
     margin-bottom:0.5em;
 }
 
