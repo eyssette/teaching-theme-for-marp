@@ -317,7 +317,7 @@ section.definition strong{
 
 section blockquote {
     color:black;
-    font-family:"Times New Roman";
+    font-family: "ETBembo", "Minion Pro", "Times New Roman";
     border:none;
     background-color:#00000009;
     padding:20px;
@@ -406,12 +406,11 @@ section.entete h3 {
 section.entete ul{
     padding-left:1em;
     padding-right:1em;
+    margin-top:-20px
 }
 section.entete ol {
     padding-left:2.5em;
     padding-right:1em;
-}
-section.entete p {
 }
 section.entete {
     display:grid;
@@ -660,6 +659,7 @@ section.i1t1.vertical {
 section.i1t1.vertical *:nth-child(1) {
     grid-area:zone1;
     margin:0 auto;
+    text-align:center;
 }
 section.i1t1.vertical p img {
     max-width:884px;
@@ -674,6 +674,7 @@ section.i1t1.vertical.pp p img {
 section.i1t1.vertical * ~ * {
     grid-area:zone2;
     margin:0 auto;
+    text-align:center;
 }
 section.i1t1.vertical *:nth-child(1) img {
     margin-bottom:-0.25em;
