@@ -18,7 +18,7 @@ Cela permet de se concentrer sur le contenu, sans avoir à gérer le positionnem
 ---
 <!-- _class: fppppppppp-->
 Pour écrire un diaporama avec Marp, il faut :
-1. Connaître la syntaxe [Markown](https://www.markdowntutorial.com/fr/) (c'est très simple),
+1. Connaître la syntaxe [Markown](https://github.com/YannHY/cours/blob/master/Markdown/Apprendre%20le%20Markdown.md) (c'est très simple),
 2. Savoir convertir son fichier en PDF ou en fichier html avec [Marp for VS Code](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode) ou [Marp CLI](https://github.com/marp-team/marp-cli)
     - Une solution plus simple, mais pour le moment moins complète : [Marp web](https://web.marp.app/)
 
