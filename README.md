@@ -10,6 +10,8 @@ Ce diaporama a été créé à partir d'un simple fichier en markdown : [source 
 
 Vous pouvez utiliser ce thème pour vos propres diapositives, le modifier : [le thème en CSS](https://github.com/eyssette/teaching-theme-for-marp/blob/master/themes/teaching.css).
 
+Voici les diaporamas que j'ai créés avec ce thème : https://eyssette.github.io/marp-slides/
+
 Merci de me faire part de vos usages, de vos remarques et de vos suggestions d'amélioration !
 
 Je ne suis pas développeur, mais professeur de philosophie… Le thème n'est probablement pas optimisé. N'hésitez pas à me communiquer vos critiques et propositions de modification !
