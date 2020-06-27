@@ -632,9 +632,9 @@ section.exercice.argumentation ol li:nth-of-type(2):before{content:"Or :   B�
 section.exercice.rgumentation ol li:nth-of-type(2){padding-bottom:45px; border-bottom:1px grey solid;}
 section.exercice.argumentation ol li:nth-of-type(3):before{content:"Donc :   C⃣"; padding-right:35px;}
 @media only screen and (max-width:800px) {
-    section.exercice.argumentation ol li:nth-of-type(1):before{content:"Or :   🅰 ";}
+    section.exercice.argumentation ol li:nth-of-type(1):before{content:" 🅰 ";}
     section.exercice.argumentation ol li:nth-of-type(2):before{content:"Or :   🅱 ";}
-    section.exercice.argumentation ol li:nth-of-type(3):before{content:"Or :   🅲 ";}
+    section.exercice.argumentation ol li:nth-of-type(3):before{content:"Donc :   🅲 ";}
 }
 section.exercice.argumentation ol li:nth-of-type(3){padding-top:30px}
 
