@@ -624,7 +624,7 @@ section.exercice.tableau.colonnes table {
 
 /* DIAPOSITIVE “EXERCICE D'ARGUMENTATION" */
 section.exercice.argumentation{ font-size:2.3rem;}
-section.exercice.argumentation::before{content:"Exercice d'argumentation"; margin-bottom:50px; text-align:center; font-size:120%; font-weight:bold;}
+section.exercice.argumentation::before{content:"Exercice d'argumentation"; margin-bottom:50px; text-align:center; font-size:120%; font-weight:bold; width:100%;}
 section.exercice.argumentation ol {border:green 3px solid; list-style-type:none; margin-left:2.3em; margin-right:2.3em;}
 section.exercice.argumentation ol li {padding:0px;padding-top:20px; padding-bottom:20px; margin-left:-1.5em;}
 section.exercice.argumentation ol li:nth-of-type(1):before{content:" A⃣"; padding-right:35px; }
