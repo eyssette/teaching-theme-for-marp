@@ -641,7 +641,7 @@ section.exercice.argumentation ol li:nth-of-type(3){padding-top:30px}
 section.exercice.application {font-size:2rem;}
 section.exercice.application h3 {text-align:center; font-size:120%;}
 section.exercice.application h3:before{
-    content:"\0270E ";
+    content:"\0270E  ";
     color:#19780d;
 }
 section.exercice.application ul {margin-bottom:0em;}
