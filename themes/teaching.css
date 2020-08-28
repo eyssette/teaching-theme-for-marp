@@ -2,9 +2,6 @@
 
 @import 'default';
 
-
-@import 'default';
-
 @charset "UTF-8";
 
 @font-face {
@@ -30,6 +27,7 @@
   font-weight: bold;
   font-style: normal
 }
+
 
 section {
     --inside-width:660px;
@@ -441,6 +439,7 @@ section.entete ol {
     padding-left:2.5em;
     padding-right:1em;
 }
+
 section.entete {
     display:grid;
     grid-template-rows: 130px ;
@@ -458,18 +457,17 @@ section.entete h3 {
 }
 
 
-
 /* Diapositives “En-tête” : Lecture / Approfondissement */
 
 section.entete.lecture, section.entete.approfondissement {
     font-size:3rem;
 }
 section.entete.lecture h3:before {
-    content:"📖";
+    content:"\01F4D6";
     padding-right:1em;
 }
 section.entete.approfondissement h3:before {
-    content:"🧗🏽‍♂️";
+    content:"\01F9D7";
     padding-right:1em;
 }
 
@@ -478,13 +476,14 @@ section.entete.lecture, section.entete.approfondissement {
     font-size:2.5rem;
 }
 section.entete.discussion h3:before {
-    content:"🗣";
+    content:"\01F5E3";
     padding-right:1em;
 }
 section.entete.groupe h3:before {
-    content:"👥👥";
+    content:"\01F465 \01F465";
     padding-right:1em;
 }
+
 
 
 /* DIAPOSITIVES “CINEMA” : Affiche + résumé */
@@ -524,7 +523,7 @@ section.qcm {
     padding-top:90px;
 }
 section.qcm::before{
-    content:"❓";
+    content:"\02753 ";
     top:40px;
     left:45%;
     position:absolute;
@@ -627,10 +626,10 @@ section.exercice.argumentation{ font-size:2.3rem;}
 section.exercice.argumentation::before{content:"Exercice d'argumentation"; margin-bottom:50px; text-align:center; font-size:120%; font-weight:bold; width:100%;}
 section.exercice.argumentation ol {border:green 3px solid; list-style-type:none; margin-left:2.3em; margin-right:2.3em;}
 section.exercice.argumentation ol li {padding:0px;padding-top:20px; padding-bottom:20px; margin-left:-1.5em;}
-section.exercice.argumentation ol li:nth-of-type(1):before{content:" A⃣"; padding-right:35px; }
-section.exercice.argumentation ol li:nth-of-type(2):before{content:"Or :   B⃣ "; padding-right:35px;}
+section.exercice.argumentation ol li:nth-of-type(1):before{content:" A\020E3"; padding-right:35px; }
+section.exercice.argumentation ol li:nth-of-type(2):before{content:"Or :   B\020E3 "; padding-right:35px;}
 section.exercice.rgumentation ol li:nth-of-type(2){padding-bottom:45px; border-bottom:1px grey solid;}
-section.exercice.argumentation ol li:nth-of-type(3):before{content:"Donc :   C⃣"; padding-right:35px;}
+section.exercice.argumentation ol li:nth-of-type(3):before{content:"Donc :   C\020E3"; padding-right:35px;}
 @media only screen and (max-width:800px) {
     section.exercice.argumentation ol li:nth-of-type(1):before{content:" 🅰 ";}
     section.exercice.argumentation ol li:nth-of-type(2):before{content:"Or :   🅱 ";}
@@ -642,7 +641,7 @@ section.exercice.argumentation ol li:nth-of-type(3){padding-top:30px}
 section.exercice.application {font-size:2rem;}
 section.exercice.application h3 {text-align:center; font-size:120%;}
 section.exercice.application h3:before{
-    content:"✎  ";
+    content:"\0270E \01F58A  ";
     color:#19780d;
 }
 section.exercice.application ul {margin-bottom:0em;}
