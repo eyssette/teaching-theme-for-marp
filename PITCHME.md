@@ -104,6 +104,10 @@ Comme il y a beaucoup de contenu dans cette diapositive (c'est déconseillé �
 <!-- _class: souspartie -->
 ## Point méthode   
 
+---
+<!-- _class: pm -->
+On peut annoncer un point méthode avec la classe ```pm``` : le sigle \[PM] s'affiche dans le coin en haut à droite.
+
 ----
 <!-- _class: pointmethode -->
 ### Point méthode
