@@ -317,6 +317,21 @@ section.pointmethode ul li:before {
     content:none;
 }
 
+/* ANNONCE DU POINT MÉTHODE */
+section.pm:before {
+    content:"[PM]";
+    font-size:25px!important;
+    color:#48742C;
+    position:absolute;
+    top:40px;
+    right:45px;
+    font-family:'Times New Roman', Times, serif;
+}
+section.pp.pm:before {
+    top:10px;
+    right:15px;
+}
+
 /* DIAPOSITIVE “DÉFINITION” */
 
 section.definition {padding-bottom:20px;}
