@@ -96,6 +96,7 @@ Pour utiliser les puces ordinaires, on encadre les puces avec la balise ```<div 
 
 - puce ordinaire
   - puce ordinaire
+
 </div>
 
 ---
