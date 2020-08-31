@@ -503,7 +503,7 @@ section.entete.lecture h3:before {
     padding-right:1em;
 }
 section.entete.approfondissement h3:before {
-    content:"\01F9D7 \01F3FD";
+    content:"\01F9D7 \01F3FD \0200D \02640 \0FE0F";
     padding-right:1em;
 }
 
