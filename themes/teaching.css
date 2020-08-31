@@ -173,6 +173,27 @@ ul ul li::before, ol ul li::before{
 }
 p ~ ol, ol ~ ul {margin-top:-0.25em;}
 
+/* Utilisation des puces dans un bloc div marqué par la classe .puces */
+div.puces ul {
+    padding-left:1.8em;
+    background-color:inherit;
+}
+div.puces ul li {
+    padding-left:0.2em;
+    list-style-type: disc;
+}
+div.puces ul ul {
+}
+div.puces ul ul li {
+    list-style-type:circle;
+}
+div.puces ul li:before {
+    content:none;
+}
+
+
+
+
 /* Centrer certains éléments */
 
 section.centrertitre h3, section.centrertitre h4 {
@@ -641,16 +662,11 @@ section.exercice.argumentation{ font-size:2.3rem;}
 section.exercice.argumentation::before{content:"Exercice d'argumentation"; margin-bottom:50px; text-align:center; font-size:120%; font-weight:bold; width:100%;}
 section.exercice.argumentation ol {border:green 3px solid; list-style-type:none; margin-left:2.3em; margin-right:2.3em;}
 section.exercice.argumentation ol li {padding:0px;padding-top:20px; padding-bottom:20px; margin-left:-1.5em;}
-section.exercice.argumentation ol li:nth-of-type(1):before{content:" A\020E3"; padding-right:35px; }
-section.exercice.argumentation ol li:nth-of-type(2):before{content:"Or :   B\020E3 "; padding-right:35px;}
+section.exercice.argumentation ol li:nth-of-type(1):before{content:" \024B6"; padding-right:35px; }
+section.exercice.argumentation ol li:nth-of-type(2):before{content:"Or :   \024B7 "; padding-right:35px;}
 section.exercice.rgumentation ol li:nth-of-type(2){padding-bottom:45px; border-bottom:1px grey solid;}
-section.exercice.argumentation ol li:nth-of-type(3):before{content:"Donc :   C\020E3"; padding-right:35px;}
+section.exercice.argumentation ol li:nth-of-type(3):before{content:"Donc :   \024B8"; padding-right:35px;}
 section.exercice.argumentation ol li:nth-of-type(3){padding-top:30px}
-@media only screen and (max-width:800px) {
-    section.exercice.argumentation ol li:nth-of-type(1):before{content:" 🅰 ";}
-    section.exercice.argumentation ol li:nth-of-type(2):before{content:"Or :   🅱 ";}
-    section.exercice.argumentation ol li:nth-of-type(3):before{content:"Donc :   🅲 ";}
-}
 
 /* DIAPOSITIVE “EXERCICE D'APPLICATION" */
 section.exercice.application {font-size:2rem;}
