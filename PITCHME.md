@@ -88,6 +88,17 @@ Pour intégrer une question que l'on veut poser aux élèves, on utilise une puc
 - Question posée aux élèves : ………… ?
 
 ---
+<!-- _class: puces -->
+
+Pour utiliser les puces ordinaires, on encadre les puces avec la balise ```<div class="puces"></div>```
+
+<div class="puces">
+
+- puce ordinaire
+  - puce ordinaire
+</div>
+
+---
 <!-- _class: fmmmmmmm centrerquestion -->
 
 Comme il y a beaucoup de contenu dans cette diapositive (c'est déconseillé 😄), on peut réduire la taille de la police de caractère avec la class `f`(pour “font”) et on ajoute une série de “m” pour avoir une police _moins_ grande, ou une série de “p” pour avoir une police _plus_ grande. Ici la classe utilisée est : ```fmmmmmmm```
