@@ -182,8 +182,6 @@ div.puces ul li {
     padding-left:0.2em;
     list-style-type: disc;
 }
-div.puces ul ul {
-}
 div.puces ul ul li {
     list-style-type:circle;
 }

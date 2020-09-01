@@ -89,15 +89,29 @@ Pour intégrer une question que l'on veut poser aux élèves, on utilise une puc
 
 ---
 <!-- _class: puces -->
-
+<style scoped>
+/* La compilation via Github ne permet pas l'usage de la balise div, mais on peut l'utiliser en compilant sur son ordinateur */
+ul {
+    padding-left:1.8em;
+    background-color:inherit;
+}
+ul li {
+    padding-left:0.2em;
+    list-style-type: disc;
+}
+ul ul li {
+    list-style-type:circle;
+}
+ul li:before {
+    content:none;
+}
+</style>
 Pour utiliser les puces ordinaires, on encadre les puces avec la balise ```<div class="puces"></div>```
-
-<div class="puces">
 
 - puce ordinaire
   - puce ordinaire
 
-</div>
+
 
 ---
 <!-- _class: fmmmmmmm centrerquestion -->
