@@ -248,7 +248,7 @@ On peut également faire en sorte que l'image soit cliquable pour renvoyer vers 
 ---
 <!-- _class: cinema fmmmmmmmmmm-->
 
-[![](https://16bit.pl/download/games/screens/scarface-the-world-is-yours/cover.jpg)](https://safeYouTube.net/w/kg3J)
+[![](https://i.pinimg.com/originals/0c/2a/8f/0c2a8f811dfcd2cc2fe6767138cbaaf5.jpg)](https://safeYouTube.net/w/kg3J)
 
 > « Antonio “Tony” Montana (Al Pacino) […] est un petit malfrat cubain qui migre vers Miami dans l'espoir de faire fortune. Il trouve au départ un petit boulot dans une baraque à frites de Miami. Mais travailler pour quelques dollars ne correspond pas à l'idée qu'il se fait du « rêve américain ». Il se fait alors embaucher par un malfrat local puis par Frank Lopez, son patron]. […] Tony apprend vite le métier de mafioso de la drogue : il monte en grade […] Il a les dents beaucoup plus longues que ses collègues, il est mégalomane, ambitieux et d'une intelligence plus perverse. Il prend pour adage : _The World is Yours_ (Le monde est à toi) [...] Mais il commence à faire des erreurs dans ce monde qui ne pardonne pas, où l'on est vite remplacé. Il prend conscience que d'être arrivé au sommet de la mafia ne le rend pas aussi heureux qu'il l'avait espéré, qu'il n'est pas capable de rendre heureuses les personnes qu'il aime&nbsp;» (source : [wikipedia](https://fr.wikipedia.org/wiki/American_History_X))
 
