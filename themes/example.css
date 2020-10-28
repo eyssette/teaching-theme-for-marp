@@ -1,0 +1,8 @@
+/* @theme example */
+
+@import 'uncover';
+
+section {
+  background: #cef;
+  color: #135;
+}
