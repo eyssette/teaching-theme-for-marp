@@ -1,0 +1,1084 @@
+/* @theme teaching */
+
+@import 'default';
+
+@charset "UTF-8";
+
+@font-face {
+  font-family: "et-book";
+  src: url("../et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot");
+  src: url("../et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix") format("embedded-opentype"), url("../et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff") format("woff"), url("../et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf") format("truetype"), url("../et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf") format("svg");
+  font-weight: normal;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "et-book";
+  src: url("../et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot");
+  src: url("../et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot?#iefix") format("embedded-opentype"), url("../et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff") format("woff"), url("../et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.ttf") format("truetype"), url("../et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.svg#etbookromanosf") format("svg");
+  font-weight: normal;
+  font-style: italic
+}
+
+@font-face {
+  font-family: "et-book";
+  src: url("../et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot");
+  src: url("../et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot?#iefix") format("embedded-opentype"), url("../et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff") format("woff"), url("../et-book/et-book-bold-line-figures/et-book-bold-line-figures.ttf") format("truetype"), url("../et-book/et-book-bold-line-figures/et-book-bold-line-figures.svg#etbookromanosf") format("svg");
+  font-weight: bold;
+  font-style: normal
+}
+
+
+section {
+    --inside-width:660px;
+    --inside-height:887px;
+    /*background-image: url('./themes/bg.png');*/
+    background-image: url('https://i.ibb.co/Y01M2TS/bg.png');
+    background-size:cover;
+    width: 960px;
+    height: 720px;
+    font-family:Helvetica;
+    margin:0;
+    padding:0;
+    font-size: calc(var(--inside-width) * 7/100);
+}
+
+section h1, section h2, section.titre p, section.partie p, section.souspartie p {
+    text-align:center;
+    margin:0;
+    padding:0;
+}
+section h3, section h4, section p, section ol {
+    text-align:left;
+    margin-left:38px;
+    margin-right:36px;
+    padding-left:30px;
+    padding-right:30px;
+}
+section h3, section h4 {
+    margin-bottom:0.5em;
+}
+
+
+section p, section ul, section ol {
+    text-align:justify;
+    line-height:1.3em;
+}
+
+section a {
+    color:#0E83B5;
+}
+
+table {padding-left:60px;
+    padding-right:60px;}
+table td, table th, table tr {background-color:white; border:none;}
+table th {border-bottom:3px solid black; padding-bottom:15px;}
+table td {border-bottom:1px solid grey;}
+
+
+/* Changer la taille de police */
+
+section.fpppppppppppp {font-size:3.02rem!important;}
+section.fppppppppppp {font-size:2.96rem!important;}
+section.fpppppppppp {font-size:2.89rem!important;}
+section.fppppppppp {font-size:2.82rem!important;}
+section.fpppppppp {font-size:2.75rem!important;}
+section.fppppppp {font-size:2.68rem!important;}
+section.fpppppp {font-size:2.61rem!important;}
+section.fppppp {font-size:2.54rem!important;}
+section.fpppp {font-size:2.47rem!important;}
+section.fppp {font-size:2.40rem!important;}
+section.fppp {font-size:2.33rem!important;}
+section.fpp {font-size:2.24rem!important;}
+section.fp {font-size:2.17rem!important;}
+section.f {font-size:2.10rem!important;}
+section.fm {font-size:2.03rem!important;}
+section.fmm {font-size:1.94rem!important;}
+section.fmmm {font-size:1.87rem!important;}
+section.fmmmm {font-size:1.80rem!important;}
+section.fmmmmm {font-size:1.73rem!important;}
+section.fmmmmmm {font-size:1.66rem!important;}
+section.fmmmmmmm {font-size:1.59rem!important;}
+section.fmmmmmmmm {font-size:1.52rem!important;}
+section.fmmmmmmmmm {font-size:1.45rem!important;}
+section.fmmmmmmmmmm {font-size:1.38rem!important;}
+section.fmmmmmmmmmmm {font-size:1.31rem!important;}
+section.fmmmmmmmmmmmm {font-size:1.24rem!important;}
+section.fmmmmmmmmmmmmm {font-size:1.17rem!important;}
+section.fmmmmmmmmmmmmmm {font-size:1.10rem!important;}
+
+
+
+/* Diapositives en pleine page */
+
+section.pleinepage, section.pp, section.citationL, section.citationM1, section.citationM2, section.citationC, section.cinema {
+    background:none;
+    background-color: white;
+}
+
+/* PAGINATION */
+
+section::after {
+    position:absolute;
+    color:white;
+    font-size:14px;
+    margin-right:-20px;
+    margin-bottom:-12px;
+}
+    
+section.pleinepage::after, section.pp::after, section.citationL::after, section.citationM1::after, section.citationM2::after, section.citationC::after, section.cinema::after {
+    color:black;
+}
+
+/* Utilisation des puces pour les questions, et style des listes ordonnées */
+ul, ol {
+    margin-top:0.5em;
+    margin-left:38px;
+    margin-right:36px;
+    padding:15px 30px;
+}
+ul {
+    background-color:#00000009;
+    list-style-type: none;
+}
+ol {
+    margin-left:38px;
+    padding-left:78px;
+}
+
+ul li {
+padding-left:1.5em;
+}
+ul li:before {
+    display:inline-block;
+    content:"➢";
+    width:1.5em;
+    margin-left:-1.5em;
+}
+ul ul, ol ul  {
+   list-style-type: none;
+    list-style-type: circle;
+    background: unset;
+    margin:0;
+    padding:0;
+    padding-top:10px;
+    padding-left:2em;
+    font-size:0.95em;
+}
+ul ul li, ol ul li {
+    padding-left:0.2em;
+}
+ul ul li::before, ol ul li::before{
+    content:"";
+}
+p ~ ol, ol ~ ul {margin-top:-0.25em;}
+
+/* Utilisation des puces dans un bloc div marqué par la classe .puces */
+div.puces ul {
+    padding-left:1.8em;
+    background-color:inherit;
+}
+div.puces ul li {
+    padding-left:0.2em;
+    list-style-type: disc;
+}
+div.puces ul ul {
+}
+div.puces ul ul li {
+    list-style-type:circle;
+}
+div.puces ul li:before {
+    content:none;
+}
+
+
+
+
+/* Centrer certains éléments */
+
+section.centrertitre h3, section.centrertitre h4 {
+text-align:center;
+margin-bottom:1em;
+}
+section.centrerquestion ul {
+    text-align:center;
+}
+
+
+
+/* Dispositions en grille */
+section.titre, section.partie, section.citationL, section.citationM1, section.citationM2, section.cinema, section.tableau {
+    display:grid;
+    grid-gap: 0px;
+    align-items: center;
+}
+
+
+
+/* DIAPOSITIVE “TITRE” */
+
+section.titre {
+    --title-height: 470px;
+    --subtitle-height: 130px;
+    /*background-image: url('./themes/bg-titre.png');*/
+    background-image: url('https://i.ibb.co/TWBvkDK/bg-titre.png');
+    grid-template-rows:30px var(--title-height) 12px var(--subtitle-height) 88px ;
+    grid-template-columns:37px 887px 37px;
+    grid-template-areas:
+    ". . ."
+    ". title ."
+    ". . ."
+    ". subtitle ."
+    ". . .";
+}
+
+section.titre h1 {
+    color:#75140C;
+    grid-area: title;
+    line-height:1.2em;
+    padding-left:40px;
+    padding-right:40px;
+    font-size: calc(var(--title-height) * 0.2);
+}
+section.titre p {
+    grid-area: subtitle;
+    margin:0;
+    padding:0;
+    font-size: calc(var(--subtitle-height) * 0.35);
+    text-align:center;
+    line-height:1.2em;
+}
+
+
+/* DIAPOSITIVE “PARTIE” */
+
+section.partie {
+    --partie-title-height: 565px;
+    --partie-subtitle-height: 70px;
+    /*background-image: url('./themes/bg-titre-partie.png');*/
+    background-image: url('https://i.ibb.co/jWCbB79/bg-titre-partie.png')!important;
+    background-size:cover !important;
+    grid-template-rows:30px var(--partie-title-height) 10px var(--partie-subtitle-height) 45px ;
+    grid-template-columns:37px 887px 37px;
+    grid-template-areas:
+    ". . ."
+    ". title ."
+    ". . ."
+    ". subtitle ."
+    ". . .";
+}
+
+section.partie h1 {
+    color:black;
+    grid-area: title;
+    padding-left:70px;
+    padding-right:70px;
+    padding-bottom:30px;
+    font-size: calc(var(--partie-title-height) * 0.2);
+}
+section.partie p {
+    grid-area: subtitle;
+    color:white;
+    font-weight:bold;
+    text-transform:uppercase;
+    font-size:120%;    
+}
+
+/* DIAPOSITIVE “SOUS-PARTIE” */
+
+section.souspartie h1 {
+    display:none;
+}
+section.souspartie h2{
+    background:#00000009;
+    padding : 50px 80px;
+    border-top:1px solid #333333;
+    border-bottom:1px solid #333333;
+    margin-bottom:40px;
+    line-height:1.3em;
+    font-size:180%;
+}
+
+/* DIAPOSITIVE “ETAPE” */
+section.etape h3{text-align:center; border-bottom: 3px solid black; padding-bottom:40px;}
+section.etape p {text-align:center;}
+
+/* DIAPOSITIVE “POINT MÉTHODE” */
+section.pointmethode {
+    font-size:3rem;
+}
+section.pointmethode h3 {
+    color:#48742C;
+    text-align:center;
+    margin-bottom:80px;
+    font-size: 180%;
+}
+section.pointmethode p, section.pointmethode ol, section.pointmethode ul {
+    background-color:#E9EFE1;
+    margin-left:38px;
+    margin-right:36px;
+    padding: 40px 1em;
+    line-height:1.4em;
+    margin-bottom:0;
+    margin-top:-30px;
+}
+section.pointmethode ul {
+    list-style-type:circle;
+    padding-left:1.8em;
+}
+section.pointmethode ol {
+    padding-left:2em;
+}
+
+
+section.pointmethode ul li {
+    padding-left:0.2em;
+}
+section.pointmethode ul li:before {
+    content:none;
+}
+
+/* ANNONCE DU POINT MÉTHODE */
+section.pm:before {
+    content:"[PM]";
+    font-size:25px!important;
+    color:#48742C;
+    position:absolute;
+    top:40px;
+    right:45px;
+    font-family:'Times New Roman', Times, serif;
+}
+section.pp.pm:before {
+    top:10px;
+    right:15px;
+}
+
+/* DIAPOSITIVE “DÉFINITION” */
+
+section.definition {padding-bottom:20px;}
+section.definition h3 {text-align:center; font-size:180%;}
+section.definition p, section.definition ol, section.definition ul {
+    border:rgb(24, 33, 117) 4px solid;
+    border-radius:40px;
+    margin-left:70px;
+    margin-right:70px;
+    padding-top:20px;
+    padding-bottom:20px;
+    margin-bottom:40px;
+}
+section.definition ul li:before {
+    content:"•"!important;
+    color: rgb(24, 33, 117);
+}
+section.definition strong{
+    color: rgb(14, 23, 107);
+    font-weight:400;
+}
+
+
+/* GESTION DES CITATIONS */
+
+section blockquote {
+    color:black;
+    font-family: "ETBembo", "et-book", "Minion Pro", "Times New Roman";
+    border:none;
+    background-color:#00000009;
+    padding:20px;
+    border-radius:15px;
+}
+blockquote p {
+    margin:0;
+    padding:0;
+    line-height:1.25em;
+}
+section blockquote blockquote {
+    margin:0;
+    padding:0;
+    padding-top:0.75em;
+    background-color:unset!important;
+    font-size:97%;
+}
+blockquote blockquote strong {
+    font-variant:small-caps;
+    font-weight:normal;
+}
+
+/* Diapositive “Citation Longue”*/
+section.citationL {
+    grid-template-rows:20px 680px 20px ;
+    grid-template-columns:20px 920px 20px;
+    grid-template-areas:
+    ". . ."
+    ". citation ."
+    ". . .";
+    font-size:1.7rem;
+}
+section.citationL blockquote{
+    grid-area:citation;
+}
+
+/* Diapositive “Citation Moyenne” – M1 */
+section.citationM1, section.citationM2 {
+    grid-template-rows:20px 680px 20px ;
+    grid-template-areas:
+    ". . . . ."
+    ". image . citation ."
+    ". . . . .";
+    font-size:2rem;
+}
+section.citationM1 {
+    grid-template-columns:20px 1fr 25px 2fr 20px;
+}
+section.citationM2 {
+    grid-template-columns:20px 1fr 25px 3.5fr 20px;
+}
+
+section.citationM1 blockquote, section.citationM2 blockquote {
+    grid-area:citation;
+}
+section.citationM1 p, section.citationM2 p {
+    grid-area:image;
+    margin:0;
+    padding:0;
+}
+section.citationM1 img {
+    padding-bottom:40px;
+}
+section.citationM2 img {
+    padding-bottom:100px;
+}
+
+/* Diapositive “Citation Courte” */
+section.citationC blockquote {
+    margin-left:20px;
+    margin-right:20px;
+}
+
+/* DIAPOSITIVE “EN-TÊTE” */
+
+section.entete h3 {
+    text-align:center;
+    font-size:120%;
+    background-color:#00000009;
+    font-weight:normal;
+    padding-top:30px;
+    padding-bottom:10px;
+    margin-bottom:10px;
+    width: 880px;
+}
+section.entete ul{
+    padding-left:1em;
+    padding-right:1em;
+    margin-top:-20px
+}
+section.entete ol {
+    padding-left:2.5em;
+    padding-right:1em;
+}
+
+section.entete {
+    display:grid;
+    grid-template-rows: 130px ;
+    grid-template-areas:
+    "titre"
+    "."
+    "."
+    "."
+    ".";
+    align-items:center;
+    grid-gap:0px;
+}
+section.entete h3 {
+    grid-area:titre;
+}
+
+
+/* Diapositives “En-tête” : Lecture / Approfondissement */
+
+section.entete.lecture, section.entete.approfondissement {
+    font-size:3rem;
+}
+section.entete.lecture h3:before {
+    content:"\01F4D6";
+    padding-right:1em;
+}
+section.entete.approfondissement h3:before {
+    content:"\01F9D7 \01F3FD \0200D \02640 \0FE0F";
+    padding-right:1em;
+}
+
+/* Diapositives “En-tête” : Discussion / Travail en groupe */
+section.entete.lecture, section.entete.approfondissement {
+    font-size:2.5rem;
+}
+section.entete.discussion h3:before {
+    content:"\01F5E3";
+    padding-right:1em;
+}
+section.entete.groupe h3:before {
+    content:"\01F465 \01F465";
+    padding-right:1em;
+}
+
+
+
+/* DIAPOSITIVES “CINEMA” : Affiche + résumé */
+
+section.cinema {
+    grid-template-rows:20px 680px 20px ;
+    grid-template-columns:1fr 25px 1fr 20px;
+    grid-template-areas:
+    "image . . ."
+    "image . resume ."
+    "image . . .";
+    margin:0;
+    padding:0;
+    font-size:1.4rem;
+}
+section.cinema p {
+    grid-area:image;
+    margin:0;
+    padding:0;
+}
+section.cinema p img {
+    height:730px;
+    width:100%;
+    margin:0;
+    padding:0;
+    object-fit:cover;
+}
+section.cinema blockquote {
+    grid-area:resume;
+    margin:0;
+}
+
+
+/* DIAPOSITIVES “QCM” */
+section.qcm {
+    font-size:2rem;
+    padding-top:90px;
+}
+section.qcm::before{
+    content:"\02753 ";
+    top:40px;
+    left:45%;
+    position:absolute;
+    font-size:80px;
+}
+
+section.qcm ol {
+  list-style-type:upper-alpha;
+  margin-top:0;
+}
+section.qcm ol li{
+    padding-left:0.2em;
+}
+section.qcm ol li:before {
+    content:"";
+}
+section.qcm ol li strong {
+    color: green;
+}
+
+/* DIAPOSITIVES “EXERCICE TABLEAU” */
+section.exercice.tableau {
+    font-size:2.3em;
+    display:grid;
+    grid-gap: 0px;
+    grid-template-columns:41px 881px 38px;
+    grid-template-areas:
+    ". . ."
+    ". haut ."
+    ". bas ."
+    ". . .";
+    align-items:center;
+}
+section.exercice.tableau table {
+    grid-area:haut;
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:30px;
+}
+section.exercice.tableau table td {
+    color:#08200e8c;
+    width:420px;
+}
+section.exercice.tableau ol {
+    grid-area:bas;
+    margin:0;
+    padding:20px;
+    background-color:#00000009;
+    text-align:left;
+}
+section.exercice.tableau ol li {
+    display:inline; 
+    counter-increment: listCounter;
+    padding-left:1em;
+}
+section.exercice.tableau ol li:before {
+    content:  '(' counter(listCounter) ')  ';
+    color:grey;
+    margin-right:-0.2em;
+}
+
+section.exercice.tableau-r table td em  {
+    color:grey;
+    font-style:normal;
+    font-size:0.9em;
+}
+section.exercice.tableau-r table td em::before {
+    content:"(";
+}
+section.exercice.tableau-r table td em::after {
+    content:")";
+}
+/* Exercice “Tableau” avec les réponses en colonnes */
+section.exercice.tableau.colonnes {font-size:1.7em;}
+ section.exercice.tableau.colonnes ol {
+    font-size:90%;
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    max-width:400px;
+    margin-left:10px;
+    padding:0;
+}
+section.exercice.tableau.colonnes ol li {
+    background-color: #00000009;
+    margin:0;
+    padding:10px;
+}
+section.exercice.tableau.colonnes ol {
+    height:400px!important;
+    max-width:430px;
+    background-color:transparent!important;
+}
+section.exercice.tableau.colonnes table {
+    margin-bottom:10px;
+}
+
+/* DIAPOSITIVE “EXERCICE D'ARGUMENTATION" */
+section.exercice.argumentation{ font-size:2.3rem;}
+section.exercice.argumentation::before{content:"Exercice d'argumentation"; margin-bottom:50px; text-align:center; font-size:120%; font-weight:bold; width:100%;}
+section.exercice.argumentation ol {border:green 3px solid; list-style-type:none; margin-left:2.3em; margin-right:2.3em;}
+section.exercice.argumentation ol li {padding:0px;padding-top:20px; padding-bottom:20px; margin-left:-1.5em;}
+section.exercice.argumentation ol li:nth-of-type(1):before{content:" \024B6"; padding-right:35px; }
+section.exercice.argumentation ol li:nth-of-type(2):before{content:"Or :   \024B7 "; padding-right:35px;}
+section.exercice.rgumentation ol li:nth-of-type(2){padding-bottom:45px; border-bottom:1px grey solid;}
+section.exercice.argumentation ol li:nth-of-type(3):before{content:"Donc :   \024B8"; padding-right:35px;}
+section.exercice.argumentation ol li:nth-of-type(3){padding-top:30px}
+
+/* DIAPOSITIVE “EXERCICE D'APPLICATION" */
+section.exercice.application {font-size:2rem;}
+section.exercice.application h3 {text-align:center; font-size:120%;}
+section.exercice.application h3:before{
+    content:"\0270E  ";
+    color:#19780d;
+}
+section.exercice.application ul {margin-bottom:0em;}
+section.exercice.application ol{margin-top:0;}
+section.exercice.application ol li{margin-top:0.1em; margin-left:1.5em;}
+
+/* MISE EN PAGE */
+
+/* AVEC 1 IMAGE + 0 TEXTE */
+section.i1t0.pp p, section.i1.pp p {
+    width:958px;
+    height:716px;
+    margin:0;
+    padding:0;
+}
+section.i1t0 p img, section.i1 p img{
+    height:100%;
+    width:100%;
+    object-fit:contain;
+}
+section.i1t0:not(.pp) p, section.i1:not(.pp) p {
+    width:860px;
+    height:644px;
+    margin:auto;
+    padding:0;
+}
+
+/* AVEC 1 IMAGE + 1 BLOC DE TEXTE */
+
+/* Alignement vertical */
+
+section.i1t1.vertical {
+    display:grid;
+    align-items:center;
+    grid-template-areas:
+    ". . . "
+    ". zone1 . "
+    ". zone2 . "
+    ". . . ";
+    align-items:center;
+    grid-gap:0.25em;
+    padding-top:30px;
+    padding-bottom:40px;
+ }
+ section.i1t1.vertical.pp {
+     padding:0;
+ }
+section.i1t1.vertical *:nth-child(1) {
+    grid-area:zone1;
+    margin:0 auto;
+    text-align:center;
+}
+section.i1t1.vertical p img {
+    max-width:884px;
+    max-height:555px;
+    margin:0 auto;
+    object-fit:contain;
+}
+section.i1t1.vertical.pp p img {
+    max-width:956px;
+    max-height:605px;
+}
+section.i1t1.vertical * ~ * {
+    grid-area:zone2;
+    margin:0 auto;
+    text-align:center;
+}
+section.i1t1.vertical *:nth-child(1) img {
+    margin-bottom:-0.25em;
+}
+section.i1t1.vertical ul, section.i1t1.vertical ol {
+    padding:8px;
+    margin:10px;
+}
+
+/* Alignement horizontal */
+
+section.i1t1.horizontal {
+    display:grid;
+    align-items:center;
+    grid-template-areas:
+    ". . ."
+    "zone1 zone2 . "
+    ". . . ";
+    grid-gap:0px;
+    padding-left:40px;
+    padding-right:40px;
+    font-size:2.3em;
+}
+
+section.i1t1.horizontal *:nth-child(1){
+grid-area:zone1;
+margin:2px;
+text-align:justify;
+}
+section.i1t1.horizontal * ~ * {
+grid-area:zone2;
+margin:0;
+}
+
+section.i1t1.horizontal * ~ ul, section.i1t1.horizontal * ~ ol {
+    padding:8px;
+    margin-right:20px;
+    text-align:left;
+}
+section.i1t1.horizontal:not(.pp) * ~ p{
+    margin-left:-5px;
+}
+
+section.i1t1.horizontal p{
+    text-align:center;
+}
+section.i1t1.horizontal img{
+    object-fit:cover;
+}
+section.i1t1.horizontal *:nth-child(1) img{
+    width:460px;
+    height:620px;
+    margin-top:10px;
+}
+section.i1t1.horizontal *:nth-child(2) img{
+    height:500px;
+}
+section.i1t1.horizontal * ~ * {
+width:350px;
+}
+section.i1t1.horizontal.pp *:nth-child(1) img{
+    width:580px;
+    height:680px;
+    margin-top:10px;
+}
+section.i1t1.horizontal.pp *:nth-child(2) img{
+    height:580px;
+}
+section.i1t1.horizontal.pp * ~ * {
+width:370px;
+}
+
+/* AVEC 1 IMAGE + 2 BLOCS DE TEXTE */
+
+section.i1t2 {
+    display:grid;
+    grid-template-areas:
+    "titre titre"
+    "zone1 zone2";
+    grid-gap:0px;
+    font-size:2.2em;
+    align-content:center;
+    align-items:center;
+}
+section.i1t2 h1, section.i1t2 h2 {
+    display:none;
+}
+section.i1t2 h3, section.i1t2 h4 {
+    grid-area:titre;
+    text-align:center;
+    margin-bottom:30px;
+    font-size:38px;
+}
+section.i1t2 *:nth-child(2) {
+    grid-area:zone1;
+    width:400px;
+    margin:0; padding:0;
+    margin-left:80px;
+    text-align:justify;
+}
+section.i1t2 * ~ * ~ * {
+    grid-area:zone2;
+    width:400px;
+    margin:0; padding:0;
+    margin-right:80px;
+    margin-left:40px;
+    text-align:justify;
+}
+section.i1t2 img {
+    width:410px;
+    height:520px;
+    object-fit:cover;
+}
+section.i1t2.pp section.i1t2 *:nth-child(2) {
+    width:460px;
+}
+section.i1t2.pp * ~ * ~ * {
+    width:460px;
+}
+section.i1t2.pp img {
+    width:460px;
+    height:580px;
+}
+section.i1t2.pp h3, section.i1t2.pp h4 {
+    font-size:44px;
+}
+
+
+/* AVEC DEUX IMAGES */
+
+/* Alignement horizontal */
+section.i2t0, section.i2t1 {
+    display:grid;
+    grid-template-areas:
+    "titre titre"
+    "zone1 zone2";
+    grid-gap:0px;
+    font-size:2.2em;
+    align-content:center;
+    align-items:center;
+}
+section.i2t0 h1, section.i2t0 h2, section.i2t1 h1, section.i2t1 h2 {
+    display:none;
+}
+
+section.i2t0 *:nth-last-child(3), section.i2t1 *:nth-last-child(3) {
+    grid-area:titre;
+    text-align:center;
+}
+section.i2t0 h3, section.i2t0 h4, section.i2t1 h3, section.i2t1 h4 {
+    grid-area:titre;
+    text-align:center;
+    margin-bottom:30px;
+    font-size:38px;
+}
+section.i2t0 p:nth-last-child(2), section.i2t1 p:nth-last-child(2) {
+    grid-area:zone1;
+    width:400px;
+    height:520px;
+    margin:0; padding:0;
+    margin-left:70px;
+}
+section.i2t0 p:nth-last-child(1), section.i2t1 p:nth-last-child(1) {
+    grid-area:zone2;
+    width:400px;
+    height:520px;
+    margin:0; padding:0;
+    margin-left:30px;
+    margin-right:70px;
+}
+section.i2t0 img, section.i2t1 img {
+    width:400px;
+    height:520px;
+    object-fit:cover;
+}
+section.i2t0.pp img, section.i2t1.pp img {
+    width:450px;
+    height:580px;
+}
+section.i2t0.pp p:nth-last-child(2), section.i2t1.pp p:nth-last-child(2), section.i2t0.pp p:nth-last-child(1), section.i2t1.pp p:nth-last-child(1) {
+    width:450px;
+    height:580px;
+}
+
+section.i2t0.pp h3, section.i2t0.pp h4, section.i2t1.pp h3, section.i2t1.pp h4 {
+    font-size:44px;
+}
+
+section.i2t0 ul, section.i2t1 ul {
+    padding:8px;
+}
+
+/* rapprocher les deux images */
+section.i2t0.rapprocher p:nth-child(2), section.i2t1.rapprocher p:nth-child(2) {margin-left:80px}
+section.i2t0.rapprocher p:nth-child(3), section.i2t1.rapprocher p:nth-child(3) {margin-left:-40px}
+
+
+/* Alignement vertical */ 
+section.i2t0.vertical {
+    grid-template-areas:
+    "zone1"
+    "zone2";
+    grid-gap:10px;
+}
+section.i2t0.vertical p {
+    height:310px;
+    width:850px;
+    margin:0; padding:0;
+}
+section.i2t0.vertical img {
+    height:310px;
+    width:850px;
+}
+section.i2t0.vertical.pp p {
+    height:340px;
+    width:900px;
+    margin:0; padding:0;
+}
+section.i2t0.vertical.pp img {
+    height:340px;
+    width:900px;
+}
+
+
+/* AVEC 3 IMAGES + 0 BLOC DE TEXTE */
+
+/* Alignement horizontal */
+section.i3t0:not(.citationC) figure {
+margin-left:5px!important;
+margin-right:5px!important;
+margin-top:38px!important;
+margin-bottom:37px!important;
+}
+section.i3t0:not(.citationC) figure:first-child {
+    margin-left:40px!important;
+}
+section.i3t0:not(.citationC) figure:last-child {
+    margin-right:40px!important;
+}
+
+/* Alignement vertical */
+section.i3t0.vertical:not(.citationC) figure {
+margin-top:2px!important;
+margin-bottom:2px!important;
+margin-left:37px!important;
+margin-right:37px!important;
+}
+section.i3t0.vertical:not(.citationC) figure:first-child {
+   margin-top:40px!important;
+}
+section.i3t0.vertical:not(.citationC) figure:last-child {
+    margin-bottom:40px!important;
+}
+
+section.i3t0.pp:not(.citationC) figure {
+margin-left:5px!important;
+margin-right:5px!important;
+margin-top:38px!important;
+margin-bottom:37px!important;
+}
+
+section.i3t0.pp.vertical:not(.citationC) figure {
+margin-top:2px!important;
+margin-bottom:2px!important;
+margin-left:37px!important;
+margin-right:37px!important;
+}
+
+/* AVEC 4 IMAGES */
+
+section.i4t0 {
+    display:grid;
+    grid-template-areas:
+    "image1 image2"
+    "image3 image4";
+    grid-gap:10px;
+    align-content:center;
+    align-items:center;
+    padding-top:15px;
+}
+section.i4t0 * {
+    margin:0; padding:0;
+}
+section.i4t0 p:nth-child(3), section.i4t0 p:nth-child(4) {
+    margin-top:-15px;
+}
+
+section.i4t0 img {
+    width:430px;
+    height:315px;
+    object-fit:cover;
+    margin:0; padding:0;
+}
+section.i4t0.pp img {
+    width:460px;
+    height:325px;
+    object-fit:cover;
+    margin:0; padding:0;
+}
+
+
+/* MISE EN PAGE COMPLEXE */
+
+section.grille.quadrillage {
+    /*background-image: url('./images/quadrillage.png');*/
+    background-image: url('https://i.ibb.co/RDz0HNP/quadrillage.png');
+}
+section.grille {
+    display:grid;
+    grid-template-columns: repeat(96,1fr);
+    grid-template-rows: repeat(72,1fr) ;
+    margin:0; padding:0;
+    padding-top:2px;
+    padding-left:12px;
+    font-size:2.5rem;
+}
+section.grille h1, section.grille h2, section.grille h3, section.grille h4, section.grille p {
+    margin:0;
+    padding:0;
+}
+section.grille p img{
+    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+}
+section.grille h1, section.grille h2, section.grille h3, section.grille h4 {
+ padding-top:20px;
+ margin-bottom:0px;
+}
+section.grille ul {
+    margin:0;   
+    padding:10px 0px 0px 0px;
+}
+section.grille ul li {
+    padding-left:60px;
+    padding-right:10px;
+}
+
+/* Redimensionner l'image pour qu'on la voit en entier dans le cadre */
+
+section.contain p img {
+    object-fit:contain!important;
+}
