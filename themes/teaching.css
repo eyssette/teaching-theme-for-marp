@@ -219,8 +219,7 @@ section.titre, section.partie, section.citationL, section.citationM1, section.ci
 section.titre {
     --title-height: 470px;
     --subtitle-height: 130px;
-    /*background-image: url('./themes/bg-titre.png');*/
-    background-image: url('https://i.ibb.co/TWBvkDK/bg-titre.png');
+    background-image: url('https://raw.githubusercontent.com/eyssette/teaching-theme-for-marp/master/assets/bg-titre_t.png');
     grid-template-rows:30px var(--title-height) 12px var(--subtitle-height) 88px ;
     grid-template-columns:37px 887px 37px;
     grid-template-areas:
@@ -254,8 +253,7 @@ section.titre p {
 section.partie {
     --partie-title-height: 565px;
     --partie-subtitle-height: 70px;
-    /*background-image: url('./themes/bg-titre-partie.png');*/
-    background-image: url('https://i.ibb.co/jWCbB79/bg-titre-partie.png')!important;
+    background-image: url('https://raw.githubusercontent.com/eyssette/teaching-theme-for-marp/master/assets/bg-titre-partie_t.png')!important;
     background-size:cover !important;
     grid-template-rows:30px var(--partie-title-height) 10px var(--partie-subtitle-height) 45px ;
     grid-template-columns:37px 887px 37px;
