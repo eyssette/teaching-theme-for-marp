@@ -32,8 +32,7 @@
 section {
     --inside-width:660px;
     --inside-height:887px;
-    /*background-image: url('./themes/bg.png');*/
-    background-image: url('https://i.ibb.co/Y01M2TS/bg.png');
+    background-image: url('https://raw.githubusercontent.com/eyssette/teaching-theme-for-marp/master/assets/bg_t.png');
     background-size:cover;
     width: 960px;
     height: 720px;
