@@ -681,7 +681,7 @@ On peut décaler la zone affichée de l'image en changeant le style de la diapos
     p:nth-child(1) img {object-position:0px -40px}
 </style>
 
-![](https://static.usbeketrica.com/images/thumb_840xh/5b51b6806d0e2.jpg)
+![](https://usbeketrica.com/media/1972/download/5b51b6806d0e2.jpg?v=1&inline=1)
 
 ![](https://pbs.twimg.com/media/ETu0VirWoAgwlqs.jpg)
 
