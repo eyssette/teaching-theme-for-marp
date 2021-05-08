@@ -8,7 +8,6 @@ size: 4:3
 <!-- _class: titre -->
 # Utiliser Marp<br> pour ses<br> diaporamas <!-- fit-->
 Cédric Eyssette (2019-2020)
-cedric.eyssette@gmail.com
 
 ---
 [Marp](https://marp.app/) est un outil qui permet de créer un diaporama à partir d'un fichier texte, écrit avec une syntaxe très simple.
@@ -786,4 +785,4 @@ Ce thème pour le logiciel [Marp](https://marp.app/) s'intitule _teaching_. Vous
 
 Merci de me faire part de vos usages, de vos remarques et de vos suggestions d'amélioration !
 
-- Email : cedric.eyssette@gmail.com
+- Email : <a href="ma&#105;l&#116;o&#58;c%6&#53;%64%&#55;2ic&#46;&#101;%79&#37;73%73&#37;&#54;5&#116;%74e&#64;g&#109;ai%6C&#46;%6&#51;om">contactez-moi</a>

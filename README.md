@@ -16,4 +16,4 @@ Merci de me faire part de vos usages, de vos remarques et de vos suggestions d'a
 
 Je ne suis pas développeur, mais professeur de philosophie… Le thème n'est probablement pas optimisé. N'hésitez pas à me communiquer vos critiques et propositions de modification !
 
-Email : cedric.eyssette@gmail.com
+Email : <a href="ma&#105;l&#116;o&#58;c%6&#53;%64%&#55;2ic&#46;&#101;%79&#37;73%73&#37;&#54;5&#116;%74e&#64;g&#109;ai%6C&#46;%6&#51;om">contactez-moi</a>
